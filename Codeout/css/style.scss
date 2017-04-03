@@ -1,6 +1,6 @@
 $primary-color: #ff5a5f;
 $secondary-color: #FFA35A;
-$tertiary-color: #00BBB4;
+$tertiary-color: #029b95;
 $fourth-color: #FF8689;
 
 * {
@@ -73,6 +73,10 @@ a {
   &:hover {
     color: $secondary-color;
   }
+}
+
+.italic {
+  font-style: italic;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -330,15 +334,37 @@ header {
       .leftSide {
         padding: 10px;
 
+        .leftContainer {
+
+          &.logo {
+
+          }
+
+          &.contact {
+
+          }
+
+          &.socialMedia {
+            a {
+              display: block;
+            }
+          }
+
+          &.skills {
+
+          }
+        }
+
       }
       .rightSide {
-        padding: 10px;
+        padding: 10px 0 0 40px;
         border-left: 1px solid #ccc;
 
         .exp {
 
           .job {
             margin-bottom: 20px;
+            padding: 0;
 
             .company {
               margin: 0;
@@ -352,6 +378,8 @@ header {
               .title {
                 font-weight: bold;
                 padding: 0;
+                line-height: 1.15em;
+                color: $tertiary-color;
               }
               .year {
                 text-align: right;

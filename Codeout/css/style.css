@@ -65,6 +65,9 @@ a {
   a:hover {
     color: #FFA35A; }
 
+.italic {
+  font-style: italic; }
+
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
@@ -159,14 +162,14 @@ header {
   .navbar .navbar-nav li {
     float: none; }
     .navbar .navbar-nav li.active a {
-      color: #00BBB4; }
+      color: #029b95; }
       .navbar .navbar-nav li.active a span {
         opacity: 1; }
     .navbar .navbar-nav li a {
       color: #dcdcdc;
       font-size: 60px; }
       .navbar .navbar-nav li a:hover {
-        color: #00BBB4;
+        color: #029b95;
         background-color: transparent; }
         .navbar .navbar-nav li a:hover span {
           opacity: 1; }
@@ -247,16 +250,21 @@ header {
       padding: 50px 0; }
     .resume section .letterContainer .leftSide {
       padding: 10px; }
+      .resume section .letterContainer .leftSide .leftContainer.socialMedia a {
+        display: block; }
     .resume section .letterContainer .rightSide {
-      padding: 10px;
+      padding: 10px 0 0 40px;
       border-left: 1px solid #ccc; }
       .resume section .letterContainer .rightSide .exp .job {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        padding: 0; }
         .resume section .letterContainer .rightSide .exp .job .company {
           margin: 0; }
         .resume section .letterContainer .rightSide .exp .job .position .title {
           font-weight: bold;
-          padding: 0; }
+          padding: 0;
+          line-height: 1.15em;
+          color: #029b95; }
         .resume section .letterContainer .rightSide .exp .job .position .year {
           text-align: right;
           color: #888888; }

@@ -41,16 +41,16 @@ $( document ).ready(function() {
 
 
   // show side nav on scroll to section 2
-  $(window).scroll(function() {
-     var hT = $('#section2').offset().top,
-         hH = $('#section2').outerHeight(),
-         wH = $(window).height(),
-         wS = $(this).scrollTop();
-      console.log((hT-wH) , wS);
-     if (wS > (hT+hH-wH)){
-      $('.navbar').css('opacity','1');
-     }
-  });
+  // $(window).scroll(function() {
+  //    var hT = $('#section2').offset().top,
+  //        hH = $('#section2').outerHeight(),
+  //        wH = $(window).height(),
+  //        wS = $(this).scrollTop();
+  //     console.log((hT-wH) , wS);
+  //    if (wS > (hT+hH-wH)){
+  //     $('.navbar').css('opacity','1');
+  //    }
+  // });
 
   // AOS
   AOS.init({
