@@ -235,7 +235,7 @@ header {
     float: left;
     left: 50%;
     transform: translateX(-50%);
-    padding: 0 50px;
+    padding: 50px;
     box-sizing: border-box; }
     .resume section .letterContainer h1, .resume section .letterContainer .h1 {
       font-size: 3.5em;
@@ -245,31 +245,41 @@ header {
       font-size: 2em;
       line-height: 1.5em;
       margin: 0 0 15px; }
+    .resume section .letterContainer h3, .resume section .letterContainer .h3 {
+      color: #464646;
+      font-size: 2em;
+      line-height: 1em; }
     .resume section .letterContainer .pageHeading {
       border-bottom: 1px solid #ccc;
-      padding: 50px 0; }
+      padding: 0 0 50px 0; }
+      .resume section .letterContainer .pageHeading h2 {
+        margin: 0; }
     .resume section .letterContainer .leftSide {
       padding: 10px; }
+      .resume section .letterContainer .leftSide .leftContainer.logo {
+        padding: 30px 0; }
       .resume section .letterContainer .leftSide .leftContainer.socialMedia a {
         display: block; }
     .resume section .letterContainer .rightSide {
       padding: 10px 0 0 40px;
       border-left: 1px solid #ccc; }
-      .resume section .letterContainer .rightSide .exp .job {
-        margin-bottom: 20px;
+      .resume section .letterContainer .rightSide .exp {
         padding: 0; }
-        .resume section .letterContainer .rightSide .exp .job .company {
-          margin: 0; }
-        .resume section .letterContainer .rightSide .exp .job .position .title {
-          font-weight: bold;
-          padding: 0;
-          line-height: 1.15em;
-          color: #029b95; }
-        .resume section .letterContainer .rightSide .exp .job .position .year {
-          text-align: right;
-          color: #888888; }
-        .resume section .letterContainer .rightSide .exp .job ul {
-          margin-left: 25px; }
+        .resume section .letterContainer .rightSide .exp .job {
+          margin-bottom: 20px;
+          padding: 0; }
+          .resume section .letterContainer .rightSide .exp .job .company {
+            margin: 0; }
+          .resume section .letterContainer .rightSide .exp .job .position .title {
+            font-weight: bold;
+            padding: 0;
+            line-height: 1.15em;
+            color: #029b95; }
+          .resume section .letterContainer .rightSide .exp .job .position .year {
+            text-align: right;
+            color: #888888; }
+          .resume section .letterContainer .rightSide .exp .job ul {
+            margin-left: 25px; }
 
 footer {
   padding: 1%;
