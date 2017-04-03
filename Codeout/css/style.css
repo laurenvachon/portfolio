@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  font-family: europa;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  padding-top: 60px;
+  margin: 0;
+  background-color: #f2f2f2; }
+
+.wf-loading {
+  visibility: hidden; }
+
+.wf-active {
+  visibility: visible; }
+
+h1, .h1 {
+  color: #000;
+  font-size: 6em;
+  font-weight: 700;
+  line-height: 2em; }
+
+h2, .h2 {
+  color: #888888;
+  font-size: 4em;
+  line-height: 2em; }
+
+h3, .h3 {
+  color: #000;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.1em; }
+
+h4, .h4 {
+  color: #FF8689;
+  font-size: 2em;
+  line-height: 1em; }
+
+h5, .h5 {
+  font-size: 1.5em;
+  line-height: .75em; }
+
+h6, .h6 {
+  font-size: 1em;
+  color: #888888;
+  line-height: .5em; }
+
+.btn {
+  background-color: #ff5a5f;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-block; }
+  .btn:hover {
+    background-color: #FFA35A;
+    color: #fff; }
+
+a {
+  color: #ff5a5f;
+  transition: all .2s;
+  text-decoration: none; }
+  a:hover {
+    color: #FFA35A; }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background-color: #ff5a5f; }
+
+::selection {
+  color: #fff;
+  background-color: #ff5a5f; }
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block; }
+  .tooltip:hover .tooltiptext {
+    visibility: visible; }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0 8px;
+    border-radius: 20px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 1;
+    transition: opacity 1s;
+    position: absolute;
+    z-index: 1;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1; }
+    .tooltip .tooltiptext::after {
+      content: " ";
+      position: absolute;
+      top: 100%;
+      /* At the bottom of the tooltip */
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent; }
+
+header {
+  background-color: #f2f2f2;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 11;
+  padding: 10px;
+  box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.1); }
+  header.nav-up {
+    top: -60px; }
+  header .brand {
+    float: left; }
+    header .brand a {
+      font-size: 24px;
+      font-weight: 700;
+      color: #ff5a5f;
+      text-decoration: none;
+      transition: all .2s;
+      padding: 4px 8px; }
+      header .brand a:hover {
+        color: #FFA35A; }
+  header ul.nav {
+    position: relative;
+    text-align: right;
+    float: right;
+    margin: 7px 0 0; }
+    header ul.nav li {
+      display: inline-block; }
+      header ul.nav li a {
+        text-decoration: none;
+        padding: 0 20px;
+        color: #888888;
+        transition: all .2s; }
+        header ul.nav li a:hover, header ul.nav li a.active {
+          color: #ff5a5f;
+          background-color: transparent; }
+
+.navbar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+  opacity: 0;
+  transition: all .5s; }
+  .navbar .navbar-nav li {
+    float: none; }
+    .navbar .navbar-nav li.active a {
+      color: #00BBB4; }
+      .navbar .navbar-nav li.active a span {
+        opacity: 1; }
+    .navbar .navbar-nav li a {
+      color: #dcdcdc;
+      font-size: 60px; }
+      .navbar .navbar-nav li a:hover {
+        color: #00BBB4;
+        background-color: transparent; }
+        .navbar .navbar-nav li a:hover span {
+          opacity: 1; }
+      .navbar .navbar-nav li a span {
+        font-size: 15px;
+        position: absolute;
+        left: -6px;
+        top: 16px;
+        opacity: 0; }
+
+.homepage section {
+  padding: 7% 8% 7% 7%;
+  overflow: hidden;
+  margin: 0; }
+  .homepage section:nth-child(odd) {
+    background-color: #f8f8f8; }
+  .homepage section.hero {
+    height: 100vh; }
+    .homepage section.hero .text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-75%); }
+  .homepage section.fullwidth::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 1; }
+  .homepage section.fullPanel {
+    background-size: cover;
+    background-position: bottom; }
+    .homepage section.fullPanel .projectPhoto {
+      margin-bottom: 60px; }
+    .homepage section.fullPanel .projectPhoto, .homepage section.fullPanel .projectDetails {
+      padding: 0 2%;
+      z-index: 2; }
+      .homepage section.fullPanel .projectPhoto .text, .homepage section.fullPanel .projectDetails .text {
+        margin-top: 100px; }
+        .homepage section.fullPanel .projectPhoto .text h3, .homepage section.fullPanel .projectDetails .text h3 {
+          margin-bottom: 20px; }
+        .homepage section.fullPanel .projectPhoto .text h6, .homepage section.fullPanel .projectDetails .text h6 {
+          margin-bottom: 30px; }
+      .homepage section.fullPanel .projectPhoto .workPhoto, .homepage section.fullPanel .projectDetails .workPhoto {
+        width: 100%;
+        height: auto;
+        position: relative; }
+        .homepage section.fullPanel .projectPhoto .workPhoto.iphone, .homepage section.fullPanel .projectDetails .workPhoto.iphone {
+          position: absolute;
+          bottom: -5px;
+          left: -60px;
+          width: 52%; }
+
+.resume section {
+  padding: 7%;
+  overflow: hidden; }
+  .resume section .letterContainer {
+    max-width: 1612px;
+    box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.3);
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 50px;
+    box-sizing: border-box; }
+    .resume section .letterContainer h1, .resume section .letterContainer .h1 {
+      font-size: 3.5em;
+      line-height: 1.5em;
+      margin: 0 0 15px; }
+    .resume section .letterContainer h2, .resume section .letterContainer .h2 {
+      font-size: 2em;
+      line-height: 1.5em;
+      margin: 0 0 15px; }
+    .resume section .letterContainer .pageHeading {
+      border-bottom: 1px solid #ccc;
+      padding: 50px 0; }
+    .resume section .letterContainer .leftSide {
+      padding: 10px; }
+    .resume section .letterContainer .rightSide {
+      padding: 10px;
+      border-left: 1px solid #ccc; }
+      .resume section .letterContainer .rightSide .exp .job {
+        margin-bottom: 20px; }
+        .resume section .letterContainer .rightSide .exp .job .company {
+          margin: 0; }
+        .resume section .letterContainer .rightSide .exp .job .position .title {
+          font-weight: bold;
+          padding: 0; }
+        .resume section .letterContainer .rightSide .exp .job .position .year {
+          text-align: right;
+          color: #888888; }
+        .resume section .letterContainer .rightSide .exp .job ul {
+          margin-left: 25px; }
+
+footer {
+  padding: 1%;
+  background-color: #eaeaea; }
+  footer .social a {
+    color: #ff5a5f;
+    transition: all .2s;
+    padding: 0 10px;
+    font-size: 20px;
+    opacity: 1; }
+    footer .social a:hover {
+      color: #FFA35A; }
+
+@media (max-width: 768px) {
+  .fullPanel .left, .fullPanel .right {
+    width: 100% !important; }
+    .fullPanel .left .workPhoto.iphone, .fullPanel .right .workPhoto.iphone {
+      left: 60px !important; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,402 @@
+$primary-color: #ff5a5f;
+$secondary-color: #FFA35A;
+$tertiary-color: #00BBB4;
+$fourth-color: #FF8689;
+
+* {
+  box-sizing: border-box;
+  font-family: europa;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  padding-top: 60px; // same as header height
+  margin: 0;
+  background-color: #f2f2f2;
+}
+.wf-loading {
+  visibility: hidden;
+}
+
+.wf-active {
+  visibility: visible;
+}
+// headings
+h1, .h1 {
+  color: #000;
+  font-size: 6em;
+  font-weight: 700;
+  line-height: 2em;
+}
+h2, .h2 {
+  color: #888888;
+  font-size: 4em;
+  line-height: 2em;
+}
+h3, .h3 {
+  color: #000;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+h4, .h4 {
+  color: $fourth-color;
+  font-size: 2em;
+  line-height: 1em;
+}
+h5, .h5 {
+  font-size: 1.5em;
+  line-height: .75em;
+}
+h6, .h6 {
+  font-size: 1em;
+  color: #888888;
+  line-height: .5em;
+}
+.btn {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all .2s;
+  display: inline-block;
+  &:hover {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+}
+a {
+  color: $primary-color;
+  transition: all .2s;
+  text-decoration: none;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background-color: $primary-color;
+}
+::selection {
+  color: #fff;
+  background-color: $primary-color;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+    &:hover .tooltiptext {
+      visibility: visible;
+      // opacity: 1;
+    }
+
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0 8px;
+    border-radius: 20px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 1;
+    transition: opacity 1s;
+    position: absolute;
+    z-index: 1;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 100%; /* At the bottom of the tooltip */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+    }
+  }
+}
+
+
+
+// header
+header {
+  background-color: #f2f2f2;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  z-index: 11;
+  padding: 10px;
+  box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.1);
+
+  &.nav-up {
+    top: -60px;
+  }
+  .brand {
+      float: left;
+      a {
+        font-size: 24px;
+        font-weight: 700;
+        color: $primary-color;
+        text-decoration: none;
+        transition: all .2s;
+        padding: 4px 8px;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+  }
+  ul.nav {
+    position: relative;
+    text-align: right;
+    float: right;
+    margin: 7px 0 0;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        padding: 0 20px;
+        color: #888888;
+        transition: all .2s;
+        &:hover, &.active {
+          color: $primary-color;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.navbar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
+  opacity: 0;
+  transition: all .5s;
+
+  .navbar-nav {
+    li {
+      float: none;
+      &.active {
+        a {
+          color: $tertiary-color;
+
+          span {
+            opacity: 1;
+          }
+        }
+      }
+      a {
+        color: #dcdcdc;
+        font-size: 60px;
+
+        &:hover {
+          color: $tertiary-color;
+          background-color: transparent;
+
+          span {
+            opacity: 1;
+          }
+        }
+
+        span {
+          font-size: 15px;
+          position: absolute;
+          left: -6px;
+          top: 16px;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.homepage {
+  section {
+    padding: 7% 8% 7% 7%;
+    overflow: hidden;
+    margin: 0;
+
+    &:nth-child(odd) {
+      background-color: #f8f8f8;
+    }
+    &.hero {
+      height: 100vh;
+
+      .text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-75%);
+      }
+    }
+    &.fullwidth {
+
+      &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.85);
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: 1;
+      }
+    }
+    &.fullPanel {
+      background-size: cover;
+      background-position: bottom;
+
+      .projectPhoto {
+        margin-bottom: 60px;
+      }
+
+      .projectPhoto, .projectDetails {
+        padding: 0 2%;
+        z-index: 2;
+
+
+        .text {
+          margin-top: 100px;
+
+          h3 {
+            margin-bottom: 20px;
+          }
+
+          h6 {
+            margin-bottom: 30px;
+          }
+        }
+        .workPhoto {
+          width: 100%;
+          height: auto;
+          position: relative;
+          // left: -200px;
+          &.iphone {
+            position: absolute;
+            bottom: -5px;
+            left: -60px;
+            width: 52%;
+          }
+        }
+      }
+    }
+  }
+}
+.resume {
+  section {
+    padding: 7%;
+    overflow: hidden;
+
+    .letterContainer {
+      max-width: 1612px;
+      box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.3);
+      position: relative;
+      float: left;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0 50px;
+      box-sizing: border-box;
+
+      h1, .h1 {
+        font-size: 3.5em;
+        line-height: 1.5em;
+        margin: 0 0 15px;
+      }
+      h2, .h2 {
+        font-size: 2em;
+        line-height: 1.5em;
+        margin: 0 0 15px;
+      }
+
+      .pageHeading {
+        border-bottom: 1px solid #ccc;
+        padding: 50px 0;
+      }
+      .leftSide {
+        padding: 10px;
+
+      }
+      .rightSide {
+        padding: 10px;
+        border-left: 1px solid #ccc;
+
+        .exp {
+
+          .job {
+            margin-bottom: 20px;
+
+            .company {
+              margin: 0;
+            }
+
+            .position {
+
+              .title, .year {
+                // margin: 0;
+              }
+              .title {
+                font-weight: bold;
+                padding: 0;
+              }
+              .year {
+                text-align: right;
+                color: #888888;
+              }
+            }
+            ul {
+                margin-left: 25px;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+
+footer {
+  padding: 1%;
+  background-color: #eaeaea;
+  .social {
+    a {
+      color: $primary-color;
+      transition: all .2s;
+      padding: 0 10px;
+      font-size: 20px;
+      opacity: 1;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .fullPanel {
+    .left, .right {
+      width: 100% !important;
+      .workPhoto {
+        &.iphone {
+          left: 60px !important;
+        }
+      }
+    }
+  }
+}
