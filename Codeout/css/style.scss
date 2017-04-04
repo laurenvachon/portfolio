@@ -40,13 +40,14 @@ h3, .h3 {
   line-height: 1.1em;
 }
 h4, .h4 {
-  color: $fourth-color;
+  color: $tertiary-color;
   font-size: 2em;
   line-height: 1em;
 }
 h5, .h5 {
   font-size: 1.5em;
   line-height: .75em;
+  // color: $secondary-color;
 }
 h6, .h6 {
   font-size: 1em;
@@ -315,6 +316,8 @@ header {
       transform: translateX(-50%);
       padding: 50px;
       box-sizing: border-box;
+      margin-bottom: 30px;
+      background-color: #fff;
 
       h1, .h1 {
         font-size: 3.5em;
@@ -331,6 +334,9 @@ header {
         font-size: 2em;
         line-height: 1em;
       }
+      h4, .h4 {
+        font-size: 1.7em;
+      }
 
       .pageHeading {
         border-bottom: 1px solid #ccc;
@@ -343,6 +349,7 @@ header {
         padding: 10px;
 
         .leftContainer {
+          margin-bottom: 30px;
 
           &.logo {
             padding: 30px 0;
@@ -379,6 +386,10 @@ header {
               margin: 0;
             }
 
+            p {
+              padding: 0;
+            }
+
             .position {
 
               .title, .year {
@@ -387,12 +398,14 @@ header {
               .title {
                 font-weight: bold;
                 padding: 0;
-                line-height: 1.15em;
-                color: $tertiary-color;
+                line-height: 1.3em;
+                color: $fourth-color;
+                font-size: 1.2em;
               }
               .year {
                 text-align: right;
                 color: #888888;
+                margin-top: 10px;
               }
             }
             ul {
