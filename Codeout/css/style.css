@@ -292,19 +292,21 @@ section {
           .resume section .letterContainer .rightSide .exp .job ul {
             margin-left: 25px; }
 
-.photography .grid .grid-item {
-  overflow: auto; }
-  .photography .grid .grid-item .grid-item-content {
-    margin-bottom: 30px; }
-    .photography .grid .grid-item .grid-item-content a.fancybox {
-      display: block !important; }
-      .photography .grid .grid-item .grid-item-content a.fancybox img {
-        width: 100%;
-        padding: 0;
-        border-radius: 0;
-        border: 0; }
-.photography .fancybox-overlay {
-  background: rgba(255, 255, 255, 0.8) !important; }
+.photography {
+  background-color: #f8f8f8; }
+  .photography .grid .grid-item {
+    overflow: auto; }
+    .photography .grid .grid-item .grid-item-content {
+      margin-bottom: 30px; }
+      .photography .grid .grid-item .grid-item-content a.fancybox {
+        display: block !important; }
+        .photography .grid .grid-item .grid-item-content a.fancybox img {
+          width: 100%;
+          padding: 0;
+          border-radius: 0;
+          border: 0; }
+  .photography .fancybox-overlay {
+    background: rgba(255, 255, 255, 0.8) !important; }
 
 footer {
   padding: 1%;
