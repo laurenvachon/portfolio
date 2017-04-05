@@ -180,50 +180,51 @@ header {
         top: 16px;
         opacity: 0; }
 
-.homepage section {
+section {
   padding: 7% 8% 7% 7%;
   overflow: hidden;
   margin: 0; }
-  .homepage section:nth-child(odd) {
-    background-color: #f8f8f8; }
-  .homepage section.hero {
-    height: 100vh; }
-    .homepage section.hero .text {
-      position: relative;
-      top: 50%;
-      transform: translateY(-75%); }
-  .homepage section.fullwidth::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.85);
-    position: absolute;
-    top: 0px;
-    left: 0;
-    z-index: 1; }
-  .homepage section.fullPanel {
-    background-size: cover;
-    background-position: bottom; }
-    .homepage section.fullPanel .projectPhoto {
-      margin-bottom: 60px; }
-    .homepage section.fullPanel .projectPhoto, .homepage section.fullPanel .projectDetails {
-      padding: 0 2%;
-      z-index: 2; }
-      .homepage section.fullPanel .projectPhoto .text, .homepage section.fullPanel .projectDetails .text {
-        margin-top: 100px; }
-        .homepage section.fullPanel .projectPhoto .text h3, .homepage section.fullPanel .projectDetails .text h3 {
-          margin-bottom: 20px; }
-        .homepage section.fullPanel .projectPhoto .text h6, .homepage section.fullPanel .projectDetails .text h6 {
-          margin-bottom: 30px; }
-      .homepage section.fullPanel .projectPhoto .workPhoto, .homepage section.fullPanel .projectDetails .workPhoto {
-        width: 100%;
-        height: auto;
-        position: relative; }
-        .homepage section.fullPanel .projectPhoto .workPhoto.iphone, .homepage section.fullPanel .projectDetails .workPhoto.iphone {
-          position: absolute;
-          bottom: -5px;
-          left: -60px;
-          width: 52%; }
+
+.homepage section:nth-child(odd) {
+  background-color: #f8f8f8; }
+.homepage section.hero {
+  height: 100vh; }
+  .homepage section.hero .text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-75%); }
+.homepage section.fullwidth::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 1; }
+.homepage section.fullPanel {
+  background-size: cover;
+  background-position: bottom; }
+  .homepage section.fullPanel .projectPhoto {
+    margin-bottom: 60px; }
+  .homepage section.fullPanel .projectPhoto, .homepage section.fullPanel .projectDetails {
+    padding: 0 2%;
+    z-index: 2; }
+    .homepage section.fullPanel .projectPhoto .text, .homepage section.fullPanel .projectDetails .text {
+      margin-top: 100px; }
+      .homepage section.fullPanel .projectPhoto .text h3, .homepage section.fullPanel .projectDetails .text h3 {
+        margin-bottom: 20px; }
+      .homepage section.fullPanel .projectPhoto .text h6, .homepage section.fullPanel .projectDetails .text h6 {
+        margin-bottom: 30px; }
+    .homepage section.fullPanel .projectPhoto .workPhoto, .homepage section.fullPanel .projectDetails .workPhoto {
+      width: 100%;
+      height: auto;
+      position: relative; }
+      .homepage section.fullPanel .projectPhoto .workPhoto.iphone, .homepage section.fullPanel .projectDetails .workPhoto.iphone {
+        position: absolute;
+        bottom: -5px;
+        left: -60px;
+        width: 52%; }
 
 .resume section {
   padding: 7%;
@@ -290,6 +291,20 @@ header {
             margin-top: 10px; }
           .resume section .letterContainer .rightSide .exp .job ul {
             margin-left: 25px; }
+
+.photography .grid .grid-item {
+  overflow: auto; }
+  .photography .grid .grid-item .grid-item-content {
+    margin-bottom: 30px; }
+    .photography .grid .grid-item .grid-item-content a.fancybox {
+      display: block !important; }
+      .photography .grid .grid-item .grid-item-content a.fancybox img {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+        border: 0; }
+.photography .fancybox-overlay {
+  background: rgba(255, 255, 255, 0.8) !important; }
 
 footer {
   padding: 1%;
