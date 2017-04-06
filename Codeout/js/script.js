@@ -80,9 +80,9 @@ if($("body").hasClass("photography")){
 
   // fancybox
   $("[data-fancybox]").fancybox({
-  	image : {
-  		protect : true
-  	}
+
+    // Animation duration in ms
+  	speed : 630
   });
 
 }
