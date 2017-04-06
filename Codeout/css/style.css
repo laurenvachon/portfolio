@@ -301,6 +301,8 @@ section {
 
 .photography {
   background-color: #f8f8f8; }
+  .photography .fancybox-bg {
+    background: rgba(255, 255, 255, 0.9); }
   .photography .grid .grid-item {
     overflow: auto; }
     .photography .grid .grid-item .grid-item-content {
