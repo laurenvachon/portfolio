@@ -79,6 +79,10 @@ a {
 .italic {
   font-style: italic;
 }
+.exclamation {
+  font-size: 2em;
+  color: $tertiary-color;
+}
 
 ::-moz-selection { /* Code for Firefox */
   color: #fff;
