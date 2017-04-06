@@ -229,6 +229,9 @@ section {
         bottom: -5px;
         left: -60px;
         width: 52%; }
+.homepage section.troon .iphone {
+  bottom: -16px !important;
+  width: 32% !important; }
 
 .resume section {
   padding: 7%;
