@@ -60,6 +60,9 @@ h6, .h6 {
   color: #888888;
   line-height: .5em;
 }
+p {
+  font-size: 1.1em;
+}
 .btn {
   background-color: $primary-color;
   color: #fff;
@@ -327,7 +330,13 @@ section {
 
 }
 
+.about {
+  background-color: #f8f8f8;
+}
+
 .resume {
+  background-color: #f8f8f8;
+
   section {
     padding: 7%;
     overflow: hidden;
@@ -483,7 +492,7 @@ section {
 
 
 footer {
-  padding: 1%;
+  padding: 1.5%;
   background-color: #eaeaea;
   .social {
     a {
