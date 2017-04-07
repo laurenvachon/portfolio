@@ -67,6 +67,20 @@ if($("body").hasClass("homepage")){
      }
   });
 
+  // add class at 768px
+  // var width = $(window).width();
+  // var website = $('#laurenvachon');
+  // $(window).resize(bootstrapSmall)
+  //   bootstrapSmall();
+  //   function bootstrapSmall () {
+  //   width = $(window).width();
+  //   if (width <= 768 && !website.hasClass('smallerScreen'))  {
+  //     website.addClass('smallerScreen');
+  //   } else if (width > 768 && website.hasClass('smallerScreen')) {
+  //     website.removeClass('smallerScreen');
+  //   }
+  // };
+
 }
 
 if($("body").hasClass("photography")){
