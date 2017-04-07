@@ -27,6 +27,12 @@ h1, .h1 {
   font-size: 6em;
   font-weight: 700;
   line-height: 1.2em;
+  @media (max-width: 420px) {
+    font-size: 4em;
+  }
+  @media (max-width: 376px) {
+    font-size: 3em;
+  }
 }
 h2, .h2 {
   color: #888888;
@@ -180,6 +186,9 @@ header {
         padding: 0 20px;
         color: #888888;
         transition: all .2s;
+        @media (max-width: 415px) {
+          padding: 0 13px;
+        }
         &:hover, &.active {
           color: $primary-color;
           background-color: transparent;
