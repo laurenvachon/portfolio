@@ -48,9 +48,12 @@ h5, .h5 {
   line-height: .75em; }
 
 h6, .h6 {
-  font-size: 1em;
+  font-size: 1.1em;
   color: #888888;
   line-height: .5em; }
+  @media (max-width: 420px) {
+    h6, .h6 {
+      font-size: 1.3em; } }
 
 p {
   font-size: 1.1em; }
@@ -169,7 +172,8 @@ header {
         transition: all .2s; }
         @media (max-width: 415px) {
           header ul.nav li a {
-            padding: 0 13px; } }
+            padding: 0 8px;
+            font-size: 1.15em; } }
         header ul.nav li a:hover, header ul.nav li a.active {
           color: #ff5a5f;
           background-color: transparent; }

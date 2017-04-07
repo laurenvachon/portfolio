@@ -56,9 +56,12 @@ h5, .h5 {
   // color: $secondary-color;
 }
 h6, .h6 {
-  font-size: 1em;
+  font-size: 1.1em;
   color: #888888;
   line-height: .5em;
+  @media(max-width: 420px) {
+    font-size: 1.3em;
+  }
 }
 p {
   font-size: 1.1em;
@@ -197,7 +200,8 @@ header {
         color: #888888;
         transition: all .2s;
         @media (max-width: 415px) {
-          padding: 0 13px;
+          padding: 0 8px;
+          font-size: 1.15em;
         }
         &:hover, &.active {
           color: $primary-color;
