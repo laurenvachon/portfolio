@@ -56,16 +56,34 @@ $( document ).ready(function() {
 
 if($("body").hasClass("homepage")){
   // show side nav on scroll to section 2
+  // $(window).scroll(function() {
+  //    var hT = $('#section2').offset().top,
+  //        hH = $('#section2').outerHeight(),
+  //        wH = $(window).height(),
+  //        wS = $(this).scrollTop();
+  //     console.log((hT-wH) , wS);
+  //    if (wS > (hT+hH-wH)){
+  //     $('.navbar').css('opacity','1');
+  //    }
+  // });
+
+  // show side nav on scroll to section 2
+  var heroHeight = $('#section1').height();
+  console.log(heroHeight);
+
   $(window).scroll(function() {
-     var hT = $('#section2').offset().top,
-         hH = $('#section2').outerHeight(),
-         wH = $(window).height(),
-         wS = $(this).scrollTop();
-      console.log((hT-wH) , wS);
-     if (wS > (hT+hH-wH)){
-      $('.navbar').css('opacity','1');
+
+    if ($(this).scrollTop()> heroHeight)
+     {
+        $('.navbar').css('right','0');
      }
-  });
+    else
+     {
+      $('.navbar').css('right','-80px');
+     }
+ });
+
+
 
   // Add smooth scrolling on all links inside the navbar
   $(".nav li a").on('click', function(event) {

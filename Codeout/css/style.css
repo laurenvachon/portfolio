@@ -87,6 +87,9 @@ a {
   font-size: 2em;
   color: #029b95; }
 
+.hideMe {
+  opacity: 0 !important; }
+
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
@@ -180,11 +183,11 @@ header {
 
 .navbar {
   position: fixed;
-  right: 0;
+  right: -80px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 9;
-  opacity: 0;
+  opacity: 1;
   transition: all .5s; }
   .navbar .navbar-nav li {
     float: none; }
@@ -255,6 +258,17 @@ section {
 .homepage section.troon .iphone {
   bottom: -16px !important;
   width: 32% !important; }
+.homepage section.mxne .projectPhoto .workPhoto.iphone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62%; }
+  .homepage section.mxne .projectPhoto .workPhoto.iphone:nth-child(1) {
+    left: 0px; }
+  .homepage section.mxne .projectPhoto .workPhoto.iphone:nth-child(2) {
+    left: 167px;
+    z-index: 1;
+    top: 0px; }
 
 .about {
   background-color: #f8f8f8; }
