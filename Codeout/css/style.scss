@@ -222,17 +222,35 @@ header {
   transform: translateY(-50%);
   z-index: 9;
   opacity: 1;
-  transition: all .5s;
+  transition: all .6s;
 
   .navbar-nav {
     li {
       float: none;
+      &::after {
+        content: "";
+        width: 1px;
+        height: 42px;
+        background-color: #dcdcdc;
+        position: absolute;
+        top: 27px;
+        right: 27px;
+        z-index: -1;
+      }
+      &:last-of-type {
+        &::after {
+          background-color: transparent;
+        }
+      }
       &.active {
         a {
           color: $tertiary-color;
 
           span {
             opacity: 1;
+            @media (max-width: 440px) {
+              display: none;
+            }
           }
         }
       }
@@ -265,6 +283,9 @@ section {
   padding: 7% 8% 7% 7%;
   overflow: hidden;
   margin: 0;
+  @media (max-width: 430px) {
+    padding: 7% 10% 7% 7%;
+  }
 }
 
 .homepage {
