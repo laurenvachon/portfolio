@@ -55,33 +55,23 @@ $( document ).ready(function() {
 //////////////
 
 if($("body").hasClass("homepage")){
-  // show side nav on scroll to section 2
-  // $(window).scroll(function() {
-  //    var hT = $('#section2').offset().top,
-  //        hH = $('#section2').outerHeight(),
-  //        wH = $(window).height(),
-  //        wS = $(this).scrollTop();
-  //     console.log((hT-wH) , wS);
-  //    if (wS > (hT+hH-wH)){
-  //     $('.navbar').css('opacity','1');
-  //    }
-  // });
 
   // show side nav on scroll to section 2
-  var heroHeight = $('#section1').height();
-  console.log(heroHeight);
-
-  $(window).scroll(function() {
-
-    if ($(this).scrollTop()> heroHeight)
-     {
-        $('.navbar').css('right','0');
-     }
-    else
-     {
-      $('.navbar').css('right','-80px');
-     }
- });
+ //  var heroHeight = $('#section1').height();
+ //  console.log(heroHeight);
+ //
+ //  $(window).scroll(function() {
+ //
+ //    if ($(this).scrollTop()> heroHeight)
+ //     {
+ //        $('.navbar').css('right','0');
+ //     }
+ //    else
+ //     {
+ //      $('.navbar').css('right','-80px');
+ //     }
+ //
+ // });
 
 
 
@@ -105,19 +95,6 @@ if($("body").hasClass("homepage")){
 
   });
 
-  // add class at 768px
-  // var width = $(window).width();
-  // var website = $('#laurenvachon');
-  // $(window).resize(bootstrapSmall)
-  //   bootstrapSmall();
-  //   function bootstrapSmall () {
-  //   width = $(window).width();
-  //   if (width <= 768 && !website.hasClass('smallerScreen'))  {
-  //     website.addClass('smallerScreen');
-  //   } else if (width > 768 && website.hasClass('smallerScreen')) {
-  //     website.removeClass('smallerScreen');
-  //   }
-  // };
 
 }
 
