@@ -231,6 +231,9 @@ section {
   @media (max-width: 430px) {
     section {
       padding: 7% 10% 7% 7%; } }
+  section.fullPanel {
+    background-size: cover;
+    background-position: bottom; }
 
 .homepage section:nth-child(odd) {
   background-color: #f8f8f8; }
@@ -286,6 +289,16 @@ section {
     left: 167px;
     z-index: 1;
     top: 0px; }
+
+.work .overview .toolsUsed {
+  padding: 0; }
+  .work .overview .toolsUsed li {
+    display: inline;
+    background: rgba(2, 155, 149, 0.4);
+    padding: 10px;
+    margin: 7px; }
+    .work .overview .toolsUsed li:first-of-type {
+      margin-left: 0; }
 
 .about {
   background-color: #f8f8f8; }
