@@ -57,26 +57,26 @@ $( document ).ready(function() {
 if($("body").hasClass("homepage")){
 
   // show side nav on scroll to section 2
- //  var heroHeight = $('#section1').height();
- //  console.log(heroHeight);
- //
- //  $(window).scroll(function() {
- //
- //    if ($(this).scrollTop()> heroHeight)
- //     {
- //        $('.navbar').css('right','0');
- //     }
- //    else
- //     {
- //      $('.navbar').css('right','-80px');
- //     }
- //
- // });
+  var heroHeight = $('#section1').height();
+  console.log(heroHeight);
+
+  $(window).scroll(function() {
+
+    if ($(this).scrollTop()> heroHeight)
+     {
+        $('.navbar').css('right','0');
+     }
+    else
+     {
+      $('.navbar').css('right','-80px');
+     }
+
+ });
 
 
 
   // Add smooth scrolling on all links inside the navbar
-  $(".nav li a").on('click', function(event) {
+  $(".soSmooth").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior

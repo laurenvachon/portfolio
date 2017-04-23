@@ -217,7 +217,8 @@ header {
 
 .navbar {
   position: fixed;
-  right: 0px;
+  // right: 0px;
+  right: -80px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 9;
@@ -311,6 +312,60 @@ section {
         top: 50%;
         transform: translateY(-75%);
       }
+
+      @-webkit-keyframes bounce {
+        0%, 10%, 20%, 50%, 80%, 100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+
+        40% {
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+
+        60% {
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+
+      @keyframes bounce {
+        0%, 10%, 20%, 50%, 80%, 100% {
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
+        }
+
+        40% {
+          -webkit-transform: translateY(-15px);
+          -ms-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+
+        60% {
+          -webkit-transform: translateY(-15px);
+          -ms-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+
+      .arrowDown {
+        position: absolute;
+        left: 7%;
+        bottom: 7%;
+        color: #dcdcdc;
+        -webkit-animation: bounce 2s ease infinite;
+        animation: bounce 2s ease infinite;
+        font-size: 30px;
+        transition: all .2s linear;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+
+
     }
     &.fullwidth {
 
@@ -429,9 +484,16 @@ section {
     padding: 7%;
     overflow: hidden;
 
+    // &.intro {
+    //   padding: 14% 7% 7%;
+    // }
+    &.resumeBox {
+      padding: 0% 7% 7%;
+    }
+
     .letterContainer {
       max-width: 1612px;
-      box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, .08);
       position: relative;
       float: left;
       left: 50%;
@@ -440,6 +502,10 @@ section {
       box-sizing: border-box;
       margin-bottom: 30px;
       background-color: #fff;
+
+      @media (max-width: 414px) {
+        padding: 20px;
+      }
 
       h1, .h1 {
         font-size: 3.5em;
@@ -496,6 +562,11 @@ section {
       .rightSide {
         padding: 10px 0 0 40px;
         border-left: 1px solid #ccc;
+        @media (max-width: 768px) {
+          border-left: 0;
+          padding: 10px 0 40px 0;
+          border-bottom: 1px solid #ccc;
+        }
 
         .exp {
           padding: 0;
@@ -528,6 +599,10 @@ section {
                 text-align: right;
                 color: #888888;
                 margin-top: 10px;
+                @media (max-width: 768px) {
+                  text-align: left;
+                  margin-top: 0;
+                }
               }
             }
             ul {

@@ -182,7 +182,7 @@ header {
 
 .navbar {
   position: fixed;
-  right: 0px;
+  right: -80px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 9;
@@ -243,6 +243,40 @@ section {
     position: relative;
     top: 50%;
     transform: translateY(-75%); }
+@-webkit-keyframes bounce {
+  0%, 10%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+@keyframes bounce {
+  0%, 10%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px); } }
+  .homepage section.hero .arrowDown {
+    position: absolute;
+    left: 7%;
+    bottom: 7%;
+    color: #dcdcdc;
+    -webkit-animation: bounce 2s ease infinite;
+    animation: bounce 2s ease infinite;
+    font-size: 30px;
+    transition: all .2s linear; }
+    .homepage section.hero .arrowDown:hover {
+      color: #FFA35A; }
 .homepage section.fullwidth::after {
   content: "";
   height: 100%;
@@ -308,9 +342,11 @@ section {
   .resume section {
     padding: 7%;
     overflow: hidden; }
+    .resume section.resumeBox {
+      padding: 0% 7% 7%; }
     .resume section .letterContainer {
       max-width: 1612px;
-      box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08);
       position: relative;
       float: left;
       left: 50%;
@@ -319,6 +355,9 @@ section {
       box-sizing: border-box;
       margin-bottom: 30px;
       background-color: #fff; }
+      @media (max-width: 414px) {
+        .resume section .letterContainer {
+          padding: 20px; } }
       .resume section .letterContainer h1, .resume section .letterContainer .h1 {
         font-size: 3.5em;
         line-height: 1.5em;
@@ -349,6 +388,11 @@ section {
       .resume section .letterContainer .rightSide {
         padding: 10px 0 0 40px;
         border-left: 1px solid #ccc; }
+        @media (max-width: 768px) {
+          .resume section .letterContainer .rightSide {
+            border-left: 0;
+            padding: 10px 0 40px 0;
+            border-bottom: 1px solid #ccc; } }
         .resume section .letterContainer .rightSide .exp {
           padding: 0; }
           .resume section .letterContainer .rightSide .exp .job {
@@ -368,6 +412,10 @@ section {
               text-align: right;
               color: #888888;
               margin-top: 10px; }
+              @media (max-width: 768px) {
+                .resume section .letterContainer .rightSide .exp .job .position .year {
+                  text-align: left;
+                  margin-top: 0; } }
             .resume section .letterContainer .rightSide .exp .job ul {
               margin-left: 25px; }
 
