@@ -2,7 +2,8 @@
   box-sizing: border-box;
   font-family: europa;
   font-weight: 400;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  color: #656565; }
 
 body {
   margin: 0;
@@ -382,9 +383,25 @@ section {
         .resume section .letterContainer .leftSide .leftContainer {
           margin-bottom: 30px; }
           .resume section .letterContainer .leftSide .leftContainer.logo {
-            padding: 30px 0; }
+            padding: 30px 0;
+            font-size: 60px;
+            color: #029b95;
+            font-weight: 600;
+            background: #f2f2f2;
+            border-radius: 50%;
+            width: 150px;
+            text-align: center;
+            margin: 20px auto;
+            box-shadow: 2px 1px 11px rgba(0, 0, 0, 0.08); }
+          .resume section .letterContainer .leftSide .leftContainer.contact p {
+            margin-bottom: 5px; }
           .resume section .letterContainer .leftSide .leftContainer.socialMedia a {
             display: block; }
+            .resume section .letterContainer .leftSide .leftContainer.socialMedia a:hover .fa, .resume section .letterContainer .leftSide .leftContainer.socialMedia a:hover span {
+              color: #FFA35A;
+              text-decoration: underline; }
+            .resume section .letterContainer .leftSide .leftContainer.socialMedia a .fa, .resume section .letterContainer .leftSide .leftContainer.socialMedia a span {
+              color: #ff5a5f; }
       .resume section .letterContainer .rightSide {
         padding: 10px 0 0 40px;
         border-left: 1px solid #ccc; }
@@ -441,13 +458,14 @@ footer {
   padding: 1.5%;
   background-color: #eaeaea; }
   footer .social a {
-    color: #ff5a5f;
     transition: all .2s;
     padding: 0 10px;
     font-size: 20px;
     opacity: 1; }
-    footer .social a:hover {
+    footer .social a:hover .fa {
       color: #FFA35A; }
+    footer .social a .fa {
+      color: #ff5a5f; }
 
 @media (max-width: 768px) {
   .fullPanel .left, .fullPanel .right {
