@@ -85,7 +85,8 @@ a {
 
 .exclamation {
   font-size: 2em;
-  color: #029b95; }
+  color: #029b95;
+  margin: 2% 0 2% 12%; }
 
 .hideMe {
   opacity: 0 !important; }
@@ -435,6 +436,40 @@ section {
                   margin-top: 0; } }
             .resume section .letterContainer .rightSide .exp .job ul {
               margin-left: 25px; }
+  @media print {
+    .resume header, .resume footer {
+      display: none; }
+    .resume section {
+      padding: 0; }
+      .resume section.intro {
+        display: none; }
+      .resume section .letterContainer {
+        width: 612px;
+        box-shadow: 0;
+        padding: 0; }
+        .resume section .letterContainer h1, .resume section .letterContainer .h1 {
+          font-size: 20px; }
+        .resume section .letterContainer h2, .resume section .letterContainer .h2 {
+          font-size: 20px; }
+        .resume section .letterContainer h3, .resume section .letterContainer .h3 {
+          font-size: 20px; }
+        .resume section .letterContainer h4, .resume section .letterContainer .h4 {
+          font-size: 20px; }
+        .resume section .letterContainer h5, .resume section .letterContainer .h5 {
+          font-size: 20px; }
+        .resume section .letterContainer h6, .resume section .letterContainer .h6 {
+          font-size: 20px; }
+        .resume section .letterContainer .leftSide {
+          width: 200px;
+          padding: 20px;
+          box-sizing: border-box;
+          float: right; }
+        .resume section .letterContainer .rightSide {
+          width: 411px;
+          border-left: 1px solid #ccc;
+          padding: 20px;
+          box-sizing: border-box;
+          float: left; } }
 
 .photography {
   background-color: #f8f8f8; }

@@ -98,6 +98,7 @@ a {
 .exclamation {
   font-size: 2em;
   color: $tertiary-color;
+  margin: 2% 0 2% 12%;
 }
 .hideMe {
   opacity: 0 !important;
@@ -637,6 +638,73 @@ section {
         }
       }
 
+
+    }
+  }
+
+  @media print {
+
+    header, footer {
+      display: none;
+    }
+
+    section {
+      padding: 0;
+
+      &.intro {
+        display: none;
+      }
+
+
+
+      .letterContainer {
+        width: 612px;
+        box-shadow: 0;
+        padding: 0;
+
+        h1, .h1 {
+          font-size: 20px;
+        }
+
+        h2, .h2 {
+          font-size: 20px;
+        }
+
+        h3, .h3 {
+          font-size: 20px;
+        }
+
+        h4, .h4 {
+          font-size: 20px;
+        }
+
+        h5, .h5 {
+          font-size: 20px;
+        }
+
+        h6, .h6 {
+          font-size: 20px;
+        }
+
+        .leftSide {
+          width: 200px;
+          padding: 20px;
+          box-sizing: border-box;
+          float: right;
+
+          .socialMedia {
+
+          }
+        }
+
+        .rightSide {
+          width: 411px;
+          border-left: 1px solid #ccc;
+          padding: 20px;
+          box-sizing: border-box;
+          float: left;
+        }
+      }
 
     }
   }
