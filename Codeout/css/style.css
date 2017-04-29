@@ -2,8 +2,7 @@
   box-sizing: border-box;
   font-family: europa;
   font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  color: #656565; }
+  -webkit-font-smoothing: antialiased; }
 
 body {
   margin: 0;
@@ -30,7 +29,7 @@ h1, .h1 {
 h2, .h2 {
   color: #888888;
   font-size: 4em;
-  line-height: 2em; }
+  line-height: 1.25em; }
 
 h3, .h3 {
   color: #000;
@@ -56,7 +55,8 @@ h6, .h6 {
       font-size: 1.3em; } }
 
 p {
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  color: #656565; }
   @media (max-width: 400px) {
     p {
       font-size: 1.3em; } }
@@ -226,12 +226,12 @@ header {
         opacity: 0; }
 
 section {
-  padding: 7% 8% 7% 7%;
+  padding: 90px 8% 7% 7%;
   overflow: hidden;
   margin: 0; }
   @media (max-width: 430px) {
     section {
-      padding: 7% 10% 7% 7%; } }
+      padding: 70px 10% 7% 7%; } }
   section.fullPanel {
     background-size: cover;
     background-position: bottom; }
@@ -326,15 +326,28 @@ section {
     z-index: 1;
     top: 0px; }
 
+.work .overview h2, .work .overview .h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin: 0 0 15px; }
 .work .overview .toolsUsed {
-  padding: 0; }
-  .work .overview .toolsUsed li {
-    display: inline;
-    background: rgba(2, 155, 149, 0.4);
-    padding: 10px;
-    margin: 7px; }
-    .work .overview .toolsUsed li:first-of-type {
-      margin-left: 0; }
+  color: #029b95; }
+.work .showWork img {
+  max-width: 100%; }
+.work .userControls {
+  padding: 5%;
+  background-color: #ccc; }
+  .work .userControls .arrows.next {
+    text-align: right; }
+  .work .userControls .arrows a {
+    font-size: 40px;
+    color: #ff5a5f;
+    transition: all .2s;
+    border-bottom: 3px solid transparent; }
+    .work .userControls .arrows a:hover {
+      color: #FFA35A;
+      border-bottom: 3px solid #FFA35A;
+      text-decoration: none; }
 
 .about {
   background-color: #f8f8f8; }

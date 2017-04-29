@@ -8,7 +8,6 @@ $fourth-color: #FF8689;
   font-family: europa;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  color: #656565;
 }
 body {
   // padding-top: 60px; // same as header height
@@ -38,7 +37,7 @@ h1, .h1 {
 h2, .h2 {
   color: #888888;
   font-size: 4em;
-  line-height: 2em;
+  line-height: 1.25em;
 }
 h3, .h3 {
   color: #000;
@@ -66,6 +65,7 @@ h6, .h6 {
 }
 p {
   font-size: 1.1em;
+  color: #656565;
   @media (max-width: 400px) {
     font-size: 1.3em;
   }
@@ -283,11 +283,11 @@ header {
 }
 
 section {
-  padding: 7% 8% 7% 7%;
+  padding: 90px 8% 7% 7%;
   overflow: hidden;
   margin: 0;
   @media (max-width: 430px) {
-    padding: 7% 10% 7% 7%;
+    padding: 70px 10% 7% 7%;
   }
 
   &.fullwidth {
@@ -458,20 +458,51 @@ section {
 
 .work {
   .overview {
+    h2, .h2 {
+      font-size: 2em;
+      line-height: 1.5em;
+      margin: 0 0 15px;
+    }
     .toolsUsed {
-      padding: 0;
+      color: $tertiary-color;
+    }
+  }
+  .showWork {
 
-      li {
-        display: inline;
-        background: rgba(2, 155, 149, .4);
-        padding: 10px;
-        margin: 7px;
+    img {
+      max-width: 100%;
+    }
 
-        &:first-of-type {
-          margin-left: 0;
+  }
+  .userControls {
+    padding: 5%;
+    background-color: #ccc;
+
+    .arrows {
+      &.prev {
+
+      }
+      &.next {
+        text-align: right;
+      }
+
+      a {
+        font-size: 40px;
+        color: $primary-color;
+        transition: all .2s;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+          color: $secondary-color;
+          border-bottom: 3px solid $secondary-color;
+          text-decoration: none;
         }
       }
+
+
+
     }
+
   }
 }
 
