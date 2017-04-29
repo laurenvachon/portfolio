@@ -334,13 +334,17 @@ section {
   color: #029b95; }
 .work .showWork img {
   max-width: 100%; }
+.work .showWork .row {
+  margin: 200px 0 0; }
+  .work .showWork .row:nth-child(1) {
+    margin: 0; }
 .work .userControls {
-  padding: 5%;
+  padding: 3%;
   background-color: #ccc; }
   .work .userControls .arrows.next {
     text-align: right; }
   .work .userControls .arrows a {
-    font-size: 40px;
+    font-size: 30px;
     color: #ff5a5f;
     transition: all .2s;
     border-bottom: 3px solid transparent; }
