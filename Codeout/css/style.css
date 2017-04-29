@@ -326,37 +326,39 @@ section {
     z-index: 1;
     top: 0px; }
 
-.work .fullPanel:nth-child(1) {
-  margin: 90px 7%; }
-.work .overview h2, .work .overview .h2 {
-  font-size: 2em;
-  line-height: 1.5em;
-  margin: 0 0 15px; }
-.work .overview .toolsUsed {
-  color: #029b95; }
-.work .showWork img {
-  max-width: 100%; }
-.work .showWork .row {
-  margin: 200px 0 0; }
-  .work .showWork .row:nth-child(1) {
-    margin: 0; }
-  @media (max-width: 425px) {
-    .work .showWork .row .mobiledevice {
-      margin: 0 0 55px 0; } }
-.work .userControls {
-  padding: 3%;
-  background-color: #ccc; }
-  .work .userControls .arrows.next {
-    text-align: right; }
-  .work .userControls .arrows a {
-    font-size: 30px;
-    color: #ff5a5f;
-    transition: all .2s;
-    border-bottom: 3px solid transparent; }
-    .work .userControls .arrows a:hover {
-      color: #FFA35A;
-      border-bottom: 3px solid #FFA35A;
-      text-decoration: none; }
+.work {
+  background-color: #f8f8f8; }
+  .work .fullPanel:nth-child(1) {
+    margin: 90px 7%; }
+  .work .overview h2, .work .overview .h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    margin: 0 0 15px; }
+  .work .overview .toolsUsed {
+    color: #029b95; }
+  .work .showWork img {
+    max-width: 100%; }
+  .work .showWork .row {
+    margin: 200px 0 0; }
+    .work .showWork .row:nth-child(1) {
+      margin: 0; }
+    @media (max-width: 425px) {
+      .work .showWork .row .mobiledevice {
+        margin: 0 0 55px 0; } }
+  .work .userControls {
+    padding: 3%;
+    background-color: #f2f2f2; }
+    .work .userControls .arrows.next {
+      text-align: right; }
+    .work .userControls .arrows a {
+      font-size: 30px;
+      color: #ff5a5f;
+      transition: all .2s;
+      border-bottom: 3px solid transparent; }
+      .work .userControls .arrows a:hover {
+        color: #FFA35A;
+        border-bottom: 3px solid #FFA35A;
+        text-decoration: none; }
 
 .about {
   background-color: #f8f8f8; }

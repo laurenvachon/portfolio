@@ -457,6 +457,7 @@ section {
 }
 
 .work {
+  background-color: #f8f8f8;
   .fullPanel {
     &:nth-child(1) {
       margin: 90px 7%;
@@ -494,7 +495,7 @@ section {
   }
   .userControls {
     padding: 3%;
-    background-color: #ccc;
+    background-color: #f2f2f2;
 
     .arrows {
       &.prev {
