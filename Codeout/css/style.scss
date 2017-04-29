@@ -457,6 +457,11 @@ section {
 }
 
 .work {
+  .fullPanel {
+    &:nth-child(1) {
+      margin: 90px 7%;
+    }
+  }
   .overview {
     h2, .h2 {
       font-size: 2em;
@@ -475,6 +480,12 @@ section {
       margin: 200px 0 0;
       &:nth-child(1) {
         margin: 0;
+      }
+
+      .mobiledevice {
+        @media(max-width: 425px) {
+          margin: 0 0 55px 0;
+        }
       }
     }
 

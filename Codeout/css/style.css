@@ -326,6 +326,8 @@ section {
     z-index: 1;
     top: 0px; }
 
+.work .fullPanel:nth-child(1) {
+  margin: 90px 7%; }
 .work .overview h2, .work .overview .h2 {
   font-size: 2em;
   line-height: 1.5em;
@@ -338,6 +340,9 @@ section {
   margin: 200px 0 0; }
   .work .showWork .row:nth-child(1) {
     margin: 0; }
+  @media (max-width: 425px) {
+    .work .showWork .row .mobiledevice {
+      margin: 0 0 55px 0; } }
 .work .userControls {
   padding: 3%;
   background-color: #ccc; }
