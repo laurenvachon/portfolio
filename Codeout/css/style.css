@@ -336,6 +336,8 @@ section {
     margin: 0 0 15px; }
   .work .overview .toolsUsed {
     color: #029b95; }
+  .work .overview .launchDate {
+    color: #a1a1a1; }
   .work .showWork img {
     max-width: 100%; }
   .work .showWork .row {
