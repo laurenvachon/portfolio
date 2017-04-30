@@ -313,6 +313,11 @@ section {
         position: relative;
         top: 50%;
         transform: translateY(-75%);
+        h2 {
+          color: $tertiary-color;
+          font-size: 2em;
+          line-height: 1em;
+        }
       }
 
       @-webkit-keyframes bounce {
