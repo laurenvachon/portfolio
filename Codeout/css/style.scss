@@ -226,6 +226,13 @@ header {
   z-index: 9;
   opacity: 1;
   transition: all .6s;
+  transform: scale(0.3);
+  right: -80px;
+
+  &.moveOut {
+    transform: scale(1) translateY(-50%);
+    right: 0;
+  }
 
   .navbar-nav {
     li {
@@ -421,6 +428,12 @@ section {
             bottom: -5px;
             left: -60px;
             width: 52%;
+
+            // &.firstiphone {
+            //   position: relative;
+            //   left: 0;
+            //   bottom: 0;
+            // }
           }
         }
       }
@@ -461,8 +474,30 @@ section {
 
 }
 
-.work {
+.interiorPage {
   background-color: #f8f8f8;
+
+  .intro {
+    padding: 11% 8% 7% 7%;
+    .overview {
+      h1 {
+        @media (max-width: 1175px) {
+          font-size: 50px;
+        }
+      }
+      h2 {
+        color: $tertiary-color;
+      }
+    }
+    h1 {
+      @media (max-width: 1175px) {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+.work {
   .fullPanel {
     &:nth-child(1) {
       margin: 90px 7%;
@@ -533,12 +568,7 @@ section {
   }
 }
 
-.about {
-  background-color: #f8f8f8;
-}
-
 .resume {
-  background-color: #f8f8f8;
 
   section {
     padding: 7%;

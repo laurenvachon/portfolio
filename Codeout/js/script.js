@@ -58,17 +58,18 @@ if($("body").hasClass("homepage")){
 
   // show side nav on scroll to section 2
   var heroHeight = $('#section1').height();
-  console.log(heroHeight);
 
   $(window).scroll(function() {
 
-    if ($(this).scrollTop()> heroHeight)
+    if ($(this).scrollTop()> heroHeight - 400)
      {
         $('.navbar').css('right','0');
+        $('.navbar').addClass('moveOut');
      }
     else
      {
       $('.navbar').css('right','-80px');
+      $('.navbar').removeClass('moveOut');
      }
 
  });
