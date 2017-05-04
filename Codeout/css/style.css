@@ -370,17 +370,37 @@ section {
 .work .userControls {
   padding: 3%;
   background-color: #f2f2f2; }
+  .work .userControls .arrows.prev {
+    padding-left: 40px; }
+    .work .userControls .arrows.prev a:before {
+      content: "\f177";
+      font-family: FontAwesome;
+      position: absolute;
+      top: 0;
+      left: -10px;
+      font-size: 30px; }
   .work .userControls .arrows.next {
+    padding-right: 40px;
     text-align: right; }
+    .work .userControls .arrows.next a:before {
+      content: "\f178";
+      font-family: FontAwesome;
+      position: absolute;
+      top: 0;
+      right: -10px;
+      font-size: 30px; }
   .work .userControls .arrows a {
     font-size: 30px;
     color: #ff5a5f;
     transition: all .2s;
-    border-bottom: 3px solid transparent; }
+    border-bottom: 3px solid transparent;
+    line-height: 1.1em; }
     .work .userControls .arrows a:hover {
       color: #FFA35A;
       border-bottom: 3px solid #FFA35A;
       text-decoration: none; }
+    .work .userControls .arrows a span {
+      font-size: 20px; }
 
 .resume section {
   padding: 7%;
