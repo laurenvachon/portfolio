@@ -84,9 +84,10 @@ a {
   font-style: italic; }
 
 .exclamation {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #FF8689;
-  margin: 2% 0 2% 12%; }
+  margin: 2% 0 2% 12%;
+  line-height: 1.5em; }
 
 .hideMe {
   opacity: 0 !important; }
