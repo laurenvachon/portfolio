@@ -78,7 +78,7 @@ p {
   text-decoration: none;
   transition: all .2s;
   display: inline-block;
-  &:hover {
+  &:hover, &:focus {
     background-color: $secondary-color;
     color: #fff;
   }
@@ -478,125 +478,123 @@ section {
 .interiorPage {
   background-color: #f8f8f8;
 
-  .intro {
-    padding: 11% 8% 7% 7%;
+  &.work {
     .overview {
-      h1 {
-        @media (max-width: 1175px) {
-          font-size: 50px;
+      .toolsUsed {
+        color: $fourth-color;
+      }
+      .launchDate {
+        color: #a1a1a1;
+      }
+    }
+    .showWork {
+      img {
+        max-width: 100%;
+      }
+      .row {
+        margin: 200px 0 0;
+        &:nth-child(1) {
+          margin: 0;
+        }
+
+        .mobiledevice {
+          @media(max-width: 425px) {
+            margin: 0 0 55px 0;
+          }
         }
       }
-      h2 {
-        color: $tertiary-color;
-      }
-    }
-    h1 {
-      @media (max-width: 1175px) {
-        font-size: 50px;
-      }
-    }
-  }
-}
 
-.work {
-  .fullPanel {
-    &:nth-child(1) {
-      margin: 90px 7%;
+      .screenshots {
+        img {
+          box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08);
+        }
+      }
+    }
+    .userControls {
+      padding: 3%;
+      background-color: #f2f2f2;
+
+      .arrows {
+        &.prev {
+          padding-left: 40px;
+          a {
+            &:before {
+              content: "\f177";
+              font-family: FontAwesome;
+              position: absolute;
+              top: 0;
+              left: -10px;
+              font-size: 30px;
+            }
+          }
+
+        }
+        &.next {
+          padding-right: 40px;
+          text-align: right;
+          a {
+            &:before {
+              content: "\f178";
+              font-family: FontAwesome;
+              position: absolute;
+              top: 0;
+              right: -10px;
+              font-size: 30px;
+            }
+          }
+
+        }
+
+        a {
+          font-size: 30px;
+          color: $primary-color;
+          transition: all .2s;
+          border-bottom: 3px solid transparent;
+          line-height: 1.1em;
+
+          &:hover {
+            color: $secondary-color;
+            border-bottom: 3px solid $secondary-color;
+            text-decoration: none;
+          }
+
+          span {
+            font-size: 20px;
+
+          }
+        }
+
+
+
+      }
+
     }
   }
-  .overview {
+
+  .intro {
+    padding: 130px 7% 90px;
+
+    @media (max-width: 768px) {
+      padding: 90px 7%;
+    }
+
+    h1 {
+      font-size: 5em;
+      margin: 0 0 10px;
+      @media (max-width: 1175px) {
+        font-size: 3.5em;
+      }
+    }
     h2, .h2 {
       font-size: 2em;
       line-height: 1.5em;
       margin: 0 0 15px;
-    }
-    .toolsUsed {
       color: $tertiary-color;
     }
-    .launchDate {
-      color: #a1a1a1;
-    }
-  }
-  .showWork {
-    img {
-      max-width: 100%;
-    }
-    .row {
-      margin: 200px 0 0;
-      &:nth-child(1) {
-        margin: 0;
-      }
-
-      .mobiledevice {
-        @media(max-width: 425px) {
-          margin: 0 0 55px 0;
-        }
-      }
-    }
-
-
-
-  }
-  .userControls {
-    padding: 3%;
-    background-color: #f2f2f2;
-
-    .arrows {
-      &.prev {
-        padding-left: 40px;
-        a {
-          &:before {
-            content: "\f177";
-            font-family: FontAwesome;
-            position: absolute;
-            top: 0;
-            left: -10px;
-            font-size: 30px;
-          }
-        }
-
-      }
-      &.next {
-        padding-right: 40px;
-        text-align: right;
-        a {
-          &:before {
-            content: "\f178";
-            font-family: FontAwesome;
-            position: absolute;
-            top: 0;
-            right: -10px;
-            font-size: 30px;
-          }
-        }
-
-      }
-
-      a {
-        font-size: 30px;
-        color: $primary-color;
-        transition: all .2s;
-        border-bottom: 3px solid transparent;
-        line-height: 1.1em;
-
-        &:hover {
-          color: $secondary-color;
-          border-bottom: 3px solid $secondary-color;
-          text-decoration: none;
-        }
-
-        span {
-          font-size: 20px;
-
-        }
-      }
-
-
-
-    }
-
   }
 }
+
+
 
 .resume {
 
@@ -681,6 +679,7 @@ section {
           &.socialMedia {
             a {
               display: block;
+              font-size: 1.1em;
 
               &:hover {
 
@@ -698,7 +697,11 @@ section {
           }
 
           &.skills {
-
+            ul {
+              li {
+                font-size: 1.1em;
+              }
+            }
           }
         }
 

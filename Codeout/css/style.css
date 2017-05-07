@@ -69,7 +69,7 @@ p {
   text-decoration: none;
   transition: all .2s;
   display: inline-block; }
-  .btn:hover {
+  .btn:hover, .btn:focus {
     background-color: #FFA35A;
     color: #fff; }
 
@@ -338,70 +338,71 @@ section {
 
 .interiorPage {
   background-color: #f8f8f8; }
+  .interiorPage.work .overview .toolsUsed {
+    color: #FF8689; }
+  .interiorPage.work .overview .launchDate {
+    color: #a1a1a1; }
+  .interiorPage.work .showWork img {
+    max-width: 100%; }
+  .interiorPage.work .showWork .row {
+    margin: 200px 0 0; }
+    .interiorPage.work .showWork .row:nth-child(1) {
+      margin: 0; }
+    @media (max-width: 425px) {
+      .interiorPage.work .showWork .row .mobiledevice {
+        margin: 0 0 55px 0; } }
+  .interiorPage.work .showWork .screenshots img {
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08); }
+  .interiorPage.work .userControls {
+    padding: 3%;
+    background-color: #f2f2f2; }
+    .interiorPage.work .userControls .arrows.prev {
+      padding-left: 40px; }
+      .interiorPage.work .userControls .arrows.prev a:before {
+        content: "\f177";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        font-size: 30px; }
+    .interiorPage.work .userControls .arrows.next {
+      padding-right: 40px;
+      text-align: right; }
+      .interiorPage.work .userControls .arrows.next a:before {
+        content: "\f178";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 0;
+        right: -10px;
+        font-size: 30px; }
+    .interiorPage.work .userControls .arrows a {
+      font-size: 30px;
+      color: #ff5a5f;
+      transition: all .2s;
+      border-bottom: 3px solid transparent;
+      line-height: 1.1em; }
+      .interiorPage.work .userControls .arrows a:hover {
+        color: #FFA35A;
+        border-bottom: 3px solid #FFA35A;
+        text-decoration: none; }
+      .interiorPage.work .userControls .arrows a span {
+        font-size: 20px; }
   .interiorPage .intro {
-    padding: 11% 8% 7% 7%; }
-    @media (max-width: 1175px) {
-      .interiorPage .intro .overview h1 {
-        font-size: 50px; } }
-    .interiorPage .intro .overview h2 {
+    padding: 130px 7% 90px; }
+    @media (max-width: 768px) {
+      .interiorPage .intro {
+        padding: 90px 7%; } }
+    .interiorPage .intro h1 {
+      font-size: 5em;
+      margin: 0 0 10px; }
+      @media (max-width: 1175px) {
+        .interiorPage .intro h1 {
+          font-size: 3.5em; } }
+    .interiorPage .intro h2, .interiorPage .intro .h2 {
+      font-size: 2em;
+      line-height: 1.5em;
+      margin: 0 0 15px;
       color: #029b95; }
-    @media (max-width: 1175px) {
-      .interiorPage .intro h1 {
-        font-size: 50px; } }
-
-.work .fullPanel:nth-child(1) {
-  margin: 90px 7%; }
-.work .overview h2, .work .overview .h2 {
-  font-size: 2em;
-  line-height: 1.5em;
-  margin: 0 0 15px; }
-.work .overview .toolsUsed {
-  color: #029b95; }
-.work .overview .launchDate {
-  color: #a1a1a1; }
-.work .showWork img {
-  max-width: 100%; }
-.work .showWork .row {
-  margin: 200px 0 0; }
-  .work .showWork .row:nth-child(1) {
-    margin: 0; }
-  @media (max-width: 425px) {
-    .work .showWork .row .mobiledevice {
-      margin: 0 0 55px 0; } }
-.work .userControls {
-  padding: 3%;
-  background-color: #f2f2f2; }
-  .work .userControls .arrows.prev {
-    padding-left: 40px; }
-    .work .userControls .arrows.prev a:before {
-      content: "\f177";
-      font-family: FontAwesome;
-      position: absolute;
-      top: 0;
-      left: -10px;
-      font-size: 30px; }
-  .work .userControls .arrows.next {
-    padding-right: 40px;
-    text-align: right; }
-    .work .userControls .arrows.next a:before {
-      content: "\f178";
-      font-family: FontAwesome;
-      position: absolute;
-      top: 0;
-      right: -10px;
-      font-size: 30px; }
-  .work .userControls .arrows a {
-    font-size: 30px;
-    color: #ff5a5f;
-    transition: all .2s;
-    border-bottom: 3px solid transparent;
-    line-height: 1.1em; }
-    .work .userControls .arrows a:hover {
-      color: #FFA35A;
-      border-bottom: 3px solid #FFA35A;
-      text-decoration: none; }
-    .work .userControls .arrows a span {
-      font-size: 20px; }
 
 .resume section {
   padding: 7%;
@@ -459,12 +460,15 @@ section {
         .resume section .letterContainer .leftSide .leftContainer.contact p {
           margin-bottom: 5px; }
         .resume section .letterContainer .leftSide .leftContainer.socialMedia a {
-          display: block; }
+          display: block;
+          font-size: 1.1em; }
           .resume section .letterContainer .leftSide .leftContainer.socialMedia a:hover .fa, .resume section .letterContainer .leftSide .leftContainer.socialMedia a:hover span {
             color: #FFA35A;
             text-decoration: underline; }
           .resume section .letterContainer .leftSide .leftContainer.socialMedia a .fa, .resume section .letterContainer .leftSide .leftContainer.socialMedia a span {
             color: #ff5a5f; }
+        .resume section .letterContainer .leftSide .leftContainer.skills ul li {
+          font-size: 1.1em; }
     .resume section .letterContainer .rightSide {
       padding: 10px 0 0 40px;
       border-left: 1px solid #ccc; }
