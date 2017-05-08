@@ -68,7 +68,8 @@ p {
   border-radius: 20px;
   text-decoration: none;
   transition: all .2s;
-  display: inline-block; }
+  display: inline-block;
+  margin: 15px 7px; }
   .btn:hover, .btn:focus {
     background-color: #FFA35A;
     color: #fff; }
@@ -76,7 +77,8 @@ p {
 a {
   color: #ff5a5f;
   transition: all .2s;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 600; }
   a:hover {
     color: #FFA35A; }
 
@@ -174,7 +176,8 @@ header {
         text-decoration: none;
         padding: 0 20px;
         color: #888888;
-        transition: all .2s; }
+        transition: all .2s;
+        font-weight: normal; }
         @media (max-width: 415px) {
           header ul.nav li a {
             padding: 0 8px;
@@ -310,8 +313,6 @@ section {
       margin: 100px 0 30px; }
       .homepage section.fullPanel .projectPhoto .text h3, .homepage section.fullPanel .projectDetails .text h3 {
         margin-bottom: 20px; }
-      .homepage section.fullPanel .projectPhoto .text h6, .homepage section.fullPanel .projectDetails .text h6 {
-        margin-bottom: 30px; }
     .homepage section.fullPanel .projectPhoto .workPhoto, .homepage section.fullPanel .projectDetails .workPhoto {
       width: 100%;
       height: auto;
@@ -342,6 +343,9 @@ section {
     color: #FF8689; }
   .interiorPage.work .overview .launchDate {
     color: #a1a1a1; }
+  .interiorPage.work .overview .award {
+    font-size: 1.2em;
+    margin: 0 0 15px; }
   .interiorPage.work .showWork img {
     max-width: 100%; }
   .interiorPage.work .showWork .row {
@@ -487,7 +491,7 @@ section {
           .resume section .letterContainer .rightSide .exp .job p {
             padding: 0; }
           .resume section .letterContainer .rightSide .exp .job .position .title {
-            font-weight: bold;
+            font-weight: normal;
             padding: 0;
             line-height: 1.3em;
             color: #FF8689;
