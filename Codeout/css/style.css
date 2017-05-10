@@ -346,6 +346,8 @@ section {
   .interiorPage.work .overview .award {
     font-size: 1.2em;
     margin: 0 0 15px; }
+  .interiorPage.work .overview .btn {
+    display: none; }
   .interiorPage.work .showWork img {
     max-width: 100%; }
   .interiorPage.work .showWork .row {
