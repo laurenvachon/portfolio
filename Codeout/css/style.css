@@ -346,8 +346,6 @@ section {
   .interiorPage.work .overview .award {
     font-size: 1.2em;
     margin: 0 0 15px; }
-  .interiorPage.work .overview .btn {
-    display: none; }
   .interiorPage.work .showWork img {
     max-width: 100%; }
   .interiorPage.work .showWork .row {
@@ -475,6 +473,8 @@ section {
             color: #ff5a5f; }
         .resume section .letterContainer .leftSide .leftContainer.skills ul li {
           font-size: 1.1em; }
+        .resume section .letterContainer .leftSide .leftContainer.education {
+          display: none; }
     .resume section .letterContainer .rightSide {
       padding: 10px 0 0 40px;
       border-left: 1px solid #ccc; }
@@ -515,33 +515,61 @@ section {
     padding: 0; }
     .resume section.intro {
       display: none; }
+    .resume section .print {
+      display: none; }
     .resume section .letterContainer {
       width: 612px;
       box-shadow: 0;
       padding: 0; }
       .resume section .letterContainer h1, .resume section .letterContainer .h1 {
-        font-size: 20px; }
+        font-size: 1.4em; }
       .resume section .letterContainer h2, .resume section .letterContainer .h2 {
-        font-size: 20px; }
+        font-size: 1.3em; }
       .resume section .letterContainer h3, .resume section .letterContainer .h3 {
-        font-size: 20px; }
+        font-size: 1.2em;
+        margin: 5px 0 10px 0; }
       .resume section .letterContainer h4, .resume section .letterContainer .h4 {
-        font-size: 20px; }
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #5f5f5f !important; }
       .resume section .letterContainer h5, .resume section .letterContainer .h5 {
-        font-size: 20px; }
+        font-size: 1em !important;
+        line-height: 1.1em; }
       .resume section .letterContainer h6, .resume section .letterContainer .h6 {
-        font-size: 20px; }
+        font-size: .9em; }
+      .resume section .letterContainer a {
+        font-weight: normal; }
+      .resume section .letterContainer a[href]:after {
+        content: none !important; }
+      .resume section .letterContainer p, .resume section .letterContainer li {
+        font-size: .8em; }
+      .resume section .letterContainer .pageHeading {
+        padding: 0 0 10px 0; }
       .resume section .letterContainer .leftSide {
         width: 200px;
-        padding: 20px;
+        padding: 5px 0 5px 30px;
         box-sizing: border-box;
         float: right; }
+        .resume section .letterContainer .leftSide .leftContainer.socialMedia {
+          display: none; }
+        .resume section .letterContainer .leftSide .leftContainer.education {
+          display: block !important; }
+        .resume section .letterContainer .leftSide .leftContainer ul li {
+          font-size: .8em !important; }
       .resume section .letterContainer .rightSide {
         width: 411px;
-        border-left: 1px solid #ccc;
-        padding: 20px;
+        border-left: 0;
+        padding: 5px 30px 5px 0;
         box-sizing: border-box;
-        float: left; } }
+        float: left;
+        border-right: 1px solid #ccc;
+        border-bottom: 0; }
+        .resume section .letterContainer .rightSide .exp .job ul {
+          margin-bottom: 0; }
+        .resume section .letterContainer .rightSide .exp .job .position .title {
+          margin: 10px 0 0; }
+        .resume section .letterContainer .rightSide .exp.education {
+          display: none !important; } }
 
 .photography {
   background-color: #f8f8f8; }
