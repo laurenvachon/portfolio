@@ -497,6 +497,9 @@ section {
       }
       .row {
         margin: 200px 0 0;
+        @media (max-width: 515px) {
+          margin: 50px 0 0;
+        }
         &:nth-child(1) {
           margin: 0;
         }
@@ -594,6 +597,9 @@ section {
     @media (max-width: 768px) {
       padding: 90px 7%;
     }
+    @media (max-width: 515px) {
+      padding: 90px 0 0;
+    }
 
     h1 {
       font-size: 5em;
@@ -622,11 +628,11 @@ section {
     padding: 7%;
     overflow: hidden;
 
-    // &.intro {
-    //   padding: 14% 7% 7%;
-    // }
     &.resumeBox {
       padding: 0% 7% 7%;
+      @media (max-width: 515px) {
+        padding: 70px 7% 7%;
+      }
     }
 
     .letterContainer {
@@ -951,6 +957,9 @@ section {
 footer {
   padding: 1.5%;
   background-color: #eaeaea;
+  @media (max-width: 500px) {
+    padding: 3.5% 1.5%;
+  }
   .social {
     a {
 

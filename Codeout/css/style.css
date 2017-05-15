@@ -170,6 +170,8 @@ section.fullPanel { background-size: cover; background-position: bottom; }
 
 .interiorPage.work .showWork .row { margin: 200px 0 0; }
 
+@media (max-width: 515px) { .interiorPage.work .showWork .row { margin: 50px 0 0; } }
+
 .interiorPage.work .showWork .row:nth-child(1) { margin: 0; }
 
 @media (max-width: 425px) { .interiorPage.work .showWork .row .mobiledevice { margin: 0 0 55px 0; } }
@@ -204,6 +206,8 @@ section.fullPanel { background-size: cover; background-position: bottom; }
 
 @media (max-width: 768px) { .interiorPage .intro { padding: 90px 7%; } }
 
+@media (max-width: 515px) { .interiorPage .intro { padding: 90px 0 0; } }
+
 .interiorPage .intro h1 { font-size: 5em; margin: 0 0 10px; }
 
 @media (max-width: 1175px) { .interiorPage .intro h1 { font-size: 3.5em; } }
@@ -215,6 +219,8 @@ section.fullPanel { background-size: cover; background-position: bottom; }
 .resume section { padding: 7%; overflow: hidden; }
 
 .resume section.resumeBox { padding: 0% 7% 7%; }
+
+@media (max-width: 515px) { .resume section.resumeBox { padding: 70px 7% 7%; } }
 
 .resume section .letterContainer { max-width: 1612px; box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08); position: relative; float: left; left: 50%; transform: translateX(-50%); padding: 50px; box-sizing: border-box; margin-bottom: 30px; background-color: #fff; }
 
@@ -309,6 +315,8 @@ section.fullPanel { background-size: cover; background-position: bottom; }
 .photography .fancybox-overlay { background: rgba(255, 255, 255, 0.8) !important; }
 
 footer { padding: 1.5%; background-color: #eaeaea; }
+
+@media (max-width: 500px) { footer { padding: 3.5% 1.5%; } }
 
 footer .social a { transition: all .2s; padding: 0 10px; font-size: 20px; opacity: 1; }
 
