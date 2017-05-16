@@ -26,7 +26,7 @@ h6, .h6 { font-size: 1.1em; color: #888888; line-height: 1.3em; }
 
 p { font-size: 1.1em; color: #656565; }
 
-@media (max-width: 400px) { p { font-size: 1.3em; } }
+@media (max-width: 515px) { p { font-size: 1.2em; } }
 
 .btn { background-color: #ff5a5f; color: #fff; padding: 10px 30px; border-radius: 20px; text-decoration: none; transition: all .2s; display: inline-block; margin: 15px 7px; }
 
@@ -144,19 +144,27 @@ section.fullPanel { background-size: cover; background-position: bottom; }
 
 .homepage section.fullPanel .projectPhoto .text, .homepage section.fullPanel .projectDetails .text { margin: 100px 0 30px; }
 
+@media (max-width: 515px) { .homepage section.fullPanel .projectPhoto .text, .homepage section.fullPanel .projectDetails .text { margin: 30px 0; } }
+
 .homepage section.fullPanel .projectPhoto .text h3, .homepage section.fullPanel .projectDetails .text h3 { margin-bottom: 20px; }
 
 .homepage section.fullPanel .projectPhoto .workPhoto, .homepage section.fullPanel .projectDetails .workPhoto { width: 100%; height: auto; position: relative; }
 
 .homepage section.fullPanel .projectPhoto .workPhoto.iphone, .homepage section.fullPanel .projectDetails .workPhoto.iphone { position: absolute; bottom: -5px; left: -60px; width: 52%; }
 
+@media (max-width: 515px) { .homepage section.fullPanel .projectPhoto .workPhoto.iphone, .homepage section.fullPanel .projectDetails .workPhoto.iphone { left: -12px; } }
+
 .homepage section.troon .iphone { bottom: -16px !important; width: 32% !important; }
 
 .homepage section.mxne .projectPhoto .workPhoto.iphone { position: absolute; top: 0; left: 0; width: 62%; }
 
+@media (max-width: 515px) { .homepage section.mxne .projectPhoto .workPhoto.iphone { width: 50%; } }
+
 .homepage section.mxne .projectPhoto .workPhoto.iphone:nth-child(1) { left: 0px; }
 
 .homepage section.mxne .projectPhoto .workPhoto.iphone:nth-child(2) { left: 167px; z-index: 1; top: 0px; }
+
+@media (max-width: 515px) { .homepage section.mxne .projectPhoto .workPhoto.iphone:nth-child(2) { left: 127px; } }
 
 .interiorPage { background-color: #f8f8f8; }
 
@@ -198,9 +206,9 @@ section.fullPanel { background-size: cover; background-position: bottom; }
 
 .interiorPage.work .userControls .arrows a:hover { color: #FFA35A; border-bottom: 3px solid #FFA35A; text-decoration: none; }
 
-.interiorPage.work .userControls .arrows a span { font-size: 20px; }
+.interiorPage.work .userControls .arrows a span { font-size: 1.1em; }
 
-@media (max-width: 415px) { .interiorPage.work .userControls .arrows a span { display: none; } }
+@media (max-width: 415px) { .interiorPage.work .userControls .arrows a span { font-size: .7em; } }
 
 .interiorPage .intro { padding: 130px 7% 90px; }
 
@@ -220,7 +228,7 @@ section.fullPanel { background-size: cover; background-position: bottom; }
 
 .resume section.resumeBox { padding: 0% 7% 7%; }
 
-@media (max-width: 515px) { .resume section.resumeBox { padding: 70px 7% 7%; } }
+@media (max-width: 515px) { .resume section.resumeBox { padding: 70px 4% 7%; } }
 
 .resume section .letterContainer { max-width: 1612px; box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08); position: relative; float: left; left: 50%; transform: translateX(-50%); padding: 50px; box-sizing: border-box; margin-bottom: 30px; background-color: #fff; }
 
@@ -275,6 +283,10 @@ section.fullPanel { background-size: cover; background-position: bottom; }
 @media (max-width: 768px) { .resume section .letterContainer .rightSide .exp .job .position .year { text-align: left; margin-top: 0; } }
 
 .resume section .letterContainer .rightSide .exp .job ul { margin-left: 25px; }
+
+@media (max-width: 515px) { .resume section .letterContainer .rightSide .exp .job ul { margin-left: 15px; } }
+
+@media (max-width: 515px) { .resume section .letterContainer .rightSide .exp .job ul li { font-size: 1.1em; } }
 
 @media print { .resume header, .resume footer { display: none; }
   .resume section { padding: 0; }
