@@ -160,6 +160,71 @@ a {
 }
 
 
+// ponystream
+// #wrapper {
+//   overflow:hidden;
+//
+//   .ponystream {
+//     float: left;
+//     width: 100%;
+//     position: fixed;
+//     height: 180px;
+//     bottom: 0px;
+//     left: 0;
+// 
+//     .ponies {
+//       background: none !important;
+//       width: 50px;
+//       height: 25px;
+//       position: absolute;
+//       bottom: 100px;
+//
+//       &.flipit {
+//         -moz-transform: scaleX(-1);
+//         -o-transform: scaleX(-1);
+//         -webkit-transform: scaleX(-1);
+//         transform: scaleX(-1);
+//         filter: FlipH;
+//         -ms-filter: "FlipH";
+//       }
+//
+//       &#pony1 {
+//         right:-150px;
+//         background: red;
+//       }
+//       &#pony2 {
+//         right: -50px;
+//         background: orange;
+//       }
+//       &#pony3 {
+//         left:-150px;
+//         background: yellow;
+//       }
+//       &#pony4 {
+//         left: -50px;
+//         background: green;
+//       }
+//       &#pony5 {
+//         left: -250px;
+//         background: blue;
+//       }
+//       &#pony6 {
+//         right: -250px;
+//         background: purple;
+//       }
+//       &#pony7 {
+//         right: -150px;
+//         background: purple;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+
 
 // header
 header {

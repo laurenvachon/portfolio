@@ -100,6 +100,30 @@ if($("body").hasClass("homepage")){
       });
     }
   });
+
+  // ponystream
+  // if (window.addEventListener) {
+  //   var keys = [],
+  //   ponystream = "80,79,78,89,83,84,82,69,65,77";
+  // 
+  //   window.addEventListener("keydown", function(e){
+  //     keys.push(e.keyCode);
+  //     if (keys.toString().indexOf(ponystream) >= 0) {
+  //       var animatePony = function () {
+  //         $('#pony1').css('right','-150px').animate({'right':$(window).width()},7000,'linear',function(){animatePony();});
+  //         $('#pony2').css('right','-50px').animate({'right':$(window).width()},8000,'linear',function(){animatePony();});
+  //         $('#pony3').css('left','-50px').animate({'left':$(window).width()},9000,'linear',function(){animatePony();});
+  //         $('#pony4').css('left','-50px').animate({'left':$(window).width()},7000,'linear',function(){animatePony();});
+  //         $('#pony5').css('left','-50px').animate({'left':$(window).width()},6000,'linear',function(){animatePony();})
+  //         $('#pony6').css('right','-50px').animate({'right':$(window).width()},8000,'linear',function(){animatePony();});
+  //         $('#pony7').css('right','-50px').animate({'right':$(window).width()},6000,'linear',function(){animatePony();});
+  //       ;};
+  //       animatePony();
+  //       keys = [];
+  //     };
+  //   }, true);
+  // };
+
 }
 
 if($("body").hasClass("photography")){
