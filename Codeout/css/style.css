@@ -379,7 +379,8 @@ section {
   .interiorPage.work .showWork img {
     max-width: 100%; }
   .interiorPage.work .showWork .row {
-    margin: 200px 0 0; }
+    margin: 200px 0 0;
+    text-align: center; }
     @media (max-width: 515px) {
       .interiorPage.work .showWork .row {
         margin: 50px 0 0; } }
