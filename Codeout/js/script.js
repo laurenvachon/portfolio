@@ -105,7 +105,7 @@ if($("body").hasClass("homepage")){
   // if (window.addEventListener) {
   //   var keys = [],
   //   ponystream = "80,79,78,89,83,84,82,69,65,77";
-  // 
+  //
   //   window.addEventListener("keydown", function(e){
   //     keys.push(e.keyCode);
   //     if (keys.toString().indexOf(ponystream) >= 0) {
@@ -127,6 +127,15 @@ if($("body").hasClass("homepage")){
 }
 
 if($("body").hasClass("photography")){
+
+  // disable right click
+  $('img').on('contextmenu', function(e) {
+  return false;
+  });
+  // disablee dragging of image
+  $('img').on('dragstart', function(e) {
+  return false;
+  });
 
   // masonry
   $(window).load(function(){
