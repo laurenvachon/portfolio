@@ -649,6 +649,11 @@ section {
       color: $tertiary-color;
     }
   }
+
+  .fullPanel {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 
