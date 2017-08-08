@@ -166,9 +166,16 @@ a {
 
 .pull-left {
   float: left !important;
+  margin: 0px 25px 10px 0;
+  width: calc(50% - 25px);
 }
 .pull-right {
   float: right !important;
+  margin: 10px 0px 10px 25px;
+  width: calc(50% - 25px);
+}
+.pull-center {
+  width: 100%;
 }
 
 
