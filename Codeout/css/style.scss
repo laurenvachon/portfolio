@@ -503,6 +503,39 @@ section {
 .interiorPage {
   background-color: #f8f8f8;
 
+  &.journal {
+    &.list {
+      .fullPanel {
+        .listItems {
+          .listItem {
+            margin: 0 0 40px;
+            .listImage {
+              height: 200px;
+              background-size: cover;
+              background-position: center;
+              display: block;
+              &::after {
+                padding-top: 100%;
+                display: block;
+                content: '';
+              }
+            }
+          }
+
+        }
+      }
+    }
+    .fullPanel {
+      .fullWidthJ {
+        img {
+          width: 100%;
+        }
+
+      }
+    }
+
+  }
+
   &.work {
     .overview {
       .toolsUsed {
