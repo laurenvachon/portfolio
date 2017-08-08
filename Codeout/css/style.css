@@ -57,6 +57,10 @@ a:hover { color: #FFA35A; }
 
 .tooltip .tooltiptext::after { content: " "; position: absolute; top: 100%; /* At the bottom of the tooltip */ left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: black transparent transparent transparent; }
 
+.pull-left { float: left !important; }
+
+.pull-right { float: right !important; }
+
 header { background-color: #f2f2f2; height: 60px; position: fixed; top: 0; transition: top 0.2s ease-in-out; width: 100%; z-index: 11; padding: 10px; box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.1); }
 
 header.nav-up { top: -60px; }
@@ -176,11 +180,17 @@ section.fullPanel { background-size: cover; background-position: bottom; }
 
 .interiorPage { background-color: #f8f8f8; }
 
-.interiorPage.journal.list .fullPanel .listItems .listItem { margin: 0 0 40px; }
+.interiorPage.journal.list .fullPanel .listItems .listItem { margin: 0 0 50px; }
 
-.interiorPage.journal.list .fullPanel .listItems .listItem .listImage { height: 200px; background-size: cover; background-position: center; display: block; }
+.interiorPage.journal.list .fullPanel .listItems .listItem .listImage { height: 250px; background-size: cover; background-position: center; display: block; }
 
 .interiorPage.journal.list .fullPanel .listItems .listItem .listImage::after { padding-top: 100%; display: block; content: ''; }
+
+.interiorPage.journal.list .fullPanel .listItems .listItem .listText { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.interiorPage.journal.detail .fullPanel p { font-size: 1.4em; line-height: 1.7em; }
+
+.interiorPage.journal.detail .fullPanel .imagePull img { width: 100%; }
 
 .interiorPage.journal .fullPanel .fullWidthJ img { width: 100%; }
 

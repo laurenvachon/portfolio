@@ -164,6 +164,14 @@ a {
 }
 
 
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+
 
 
 // header
@@ -508,9 +516,10 @@ section {
       .fullPanel {
         .listItems {
           .listItem {
-            margin: 0 0 40px;
+            margin: 0 0 50px;
+            // background-color: #ffffff;
             .listImage {
-              height: 200px;
+              height: 250px;
               background-size: cover;
               background-position: center;
               display: block;
@@ -520,8 +529,27 @@ section {
                 content: '';
               }
             }
+            .listText {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
           }
 
+        }
+      }
+    }
+
+    &.detail {
+      .fullPanel {
+        p {
+          font-size: 1.4em;
+          line-height: 1.7em;
+        }
+        .imagePull {
+          img {
+            width: 100%;
+          }
         }
       }
     }
