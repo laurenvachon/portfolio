@@ -138,7 +138,7 @@ if($("body").hasClass("journal")){
 				//re-trim if we are in the middle of a word
 				trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
 				output += '<p>' + trimmedString + '...</p>';
-        output += '<p><a href="'+ item.link + '"> Continue Reading </a></p>';
+        output += '<p><a href="'+ item.link + '" target="_blank"> Continue Reading </a></p>';
 				output += '</div></div></div>';
 				return k < 3;
 			});
