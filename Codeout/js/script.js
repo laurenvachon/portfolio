@@ -113,9 +113,15 @@ if($("body").hasClass("journal")){
 	$.get('https://api.rss2json.com/v1/api.json', data, function (response) {
 		if (response.status == 'ok') {
 			var output = '';
+      var posts = $.map(response.items, function(post, i) {
+        var postCategories = response.items[i].categories
+        if(postCategories.length !== 0 ) {
+          return post;
+        }
+      });
 			$.each(response.items, function (k, item) {
 				var visibleSm;
-				if(k < 3){
+				if(k < 12){
 					visibleSm = '';
 				 } else {
 					 visibleSm = ' visible-sm';
@@ -128,7 +134,7 @@ if($("body").hasClass("journal")){
 				var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
 				var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
 				var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
-				output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="240px"></div></div>';
+        output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="240px"></div></div>';
 				output += '<div class="blog-content"><h3>' + item.title + '</h3>';
 				output += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
 				var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
@@ -140,7 +146,7 @@ if($("body").hasClass("journal")){
 				output += '<p>' + trimmedString + '...</p>';
         output += '<p><a href="'+ item.link + '" target="_blank"> Continue Reading </a></p>';
 				output += '</div></div></div>';
-				return k < 3;
+				return k < 12;
 			});
 			$content.html(output);
 		}

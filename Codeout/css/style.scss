@@ -521,8 +521,21 @@ section {
 .blog {
   .blog-post {
     margin-bottom: 40px;
+    .blog-element {
+      width: 100%;
+      height: 230px;
+      overflow: hidden;
+      .img-responsive {
+        height: 100%;
+      }
+    }
     .blog-content {
-
+      h3 {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
   }
 }
