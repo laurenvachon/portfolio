@@ -36,7 +36,7 @@ h1, .h1 {
   }
 }
 h2, .h2 {
-  color: #888888;
+  color: $tertiary-color;
   font-size: 4em;
   line-height: 1.25em;
 }
@@ -47,7 +47,7 @@ h3, .h3 {
   line-height: 1.1em;
 }
 h4, .h4 {
-  color: $tertiary-color;
+  color: #888888;
   font-size: 2em;
   line-height: 1em;
 }
@@ -688,6 +688,18 @@ section {
 
   }
 
+  &.sunsetpsychic {
+    .fullPanel {
+      .showWork {
+        .mobiledevice {
+          p {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
   &.work {
     .overview {
       .toolsUsed {
@@ -701,23 +713,37 @@ section {
         margin: 0 0 15px;
       }
     }
+    .imgFullWidth {
+      max-width: 100%;
+      margin-top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: relative;
+      top: 0;
+      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, .08);
+    }
+    .imgHalfWidth {
+      width: 49%;
+      vertical-align: top !important;
+      margin-top: 30px;
+      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, .08);
+    }
     .fullPanel {
       &.challenge {
-        background: green;
+        background: $secondary-color;
+        h1, h2, h3, h4, h5, h6, p, ul, li, a {
+          color: #fff;
+        }
       }
       &.solution {
-        background: red;
+        background: $primary-color;
+        h1, h2, h3, h4, h5, h6, p, ul, li, a {
+          color: #fff;
+        }
       }
       &.research {
-        background: orange;
+        background: #f2f2f2;
 
-        .imgFullWidth {
-          width: 100%;
-        }
-        .imgHalfWidth {
-          width: 49%;
-          vertical-align: top !important;
-        }
         .researchdiv {
           display: block;
           float: left;
@@ -951,6 +977,7 @@ section {
       }
       h4, .h4 {
         font-size: 1.7em;
+        color: $tertiary-color;
       }
 
       .pageHeading {

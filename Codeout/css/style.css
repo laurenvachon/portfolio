@@ -29,7 +29,7 @@ h1, .h1 {
       font-size: 3em; } }
 
 h2, .h2 {
-  color: #888888;
+  color: #029b95;
   font-size: 4em;
   line-height: 1.25em; }
 
@@ -40,7 +40,7 @@ h3, .h3 {
   line-height: 1.1em; }
 
 h4, .h4 {
-  color: #029b95;
+  color: #888888;
   font-size: 2em;
   line-height: 1em; }
 
@@ -495,6 +495,8 @@ section {
     width: 100%; }
   .interiorPage.journal .fullPanel .fullWidthJ img {
     width: 100%; }
+  .interiorPage.sunsetpsychic .fullPanel .showWork .mobiledevice p {
+    margin-top: 20px; }
   .interiorPage.work .overview .toolsUsed {
     color: #FF8689; }
   .interiorPage.work .overview .launchDate {
@@ -502,17 +504,29 @@ section {
   .interiorPage.work .overview .award {
     font-size: 1.2em;
     margin: 0 0 15px; }
+  .interiorPage.work .imgFullWidth {
+    max-width: 100%;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    top: 0;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08); }
+  .interiorPage.work .imgHalfWidth {
+    width: 49%;
+    vertical-align: top !important;
+    margin-top: 30px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08); }
   .interiorPage.work .fullPanel.challenge {
-    background: green; }
+    background: #FFA35A; }
+    .interiorPage.work .fullPanel.challenge h1, .interiorPage.work .fullPanel.challenge h2, .interiorPage.work .fullPanel.challenge h3, .interiorPage.work .fullPanel.challenge h4, .interiorPage.work .fullPanel.challenge h5, .interiorPage.work .fullPanel.challenge h6, .interiorPage.work .fullPanel.challenge p, .interiorPage.work .fullPanel.challenge ul, .interiorPage.work .fullPanel.challenge li, .interiorPage.work .fullPanel.challenge a {
+      color: #fff; }
   .interiorPage.work .fullPanel.solution {
-    background: red; }
+    background: #ff5a5f; }
+    .interiorPage.work .fullPanel.solution h1, .interiorPage.work .fullPanel.solution h2, .interiorPage.work .fullPanel.solution h3, .interiorPage.work .fullPanel.solution h4, .interiorPage.work .fullPanel.solution h5, .interiorPage.work .fullPanel.solution h6, .interiorPage.work .fullPanel.solution p, .interiorPage.work .fullPanel.solution ul, .interiorPage.work .fullPanel.solution li, .interiorPage.work .fullPanel.solution a {
+      color: #fff; }
   .interiorPage.work .fullPanel.research {
-    background: orange; }
-    .interiorPage.work .fullPanel.research .imgFullWidth {
-      width: 100%; }
-    .interiorPage.work .fullPanel.research .imgHalfWidth {
-      width: 49%;
-      vertical-align: top !important; }
+    background: #f2f2f2; }
     .interiorPage.work .fullPanel.research .researchdiv {
       display: block;
       float: left;
@@ -668,7 +682,8 @@ section {
       font-size: 2em;
       line-height: 1em; }
     .resume section .letterContainer h4, .resume section .letterContainer .h4 {
-      font-size: 1.7em; }
+      font-size: 1.7em;
+      color: #029b95; }
     .resume section .letterContainer .pageHeading {
       border-bottom: 1px solid #ccc;
       padding: 0 0 50px 0; }
