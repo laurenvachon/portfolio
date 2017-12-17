@@ -502,39 +502,45 @@ section {
   .interiorPage.work .overview .award {
     font-size: 1.2em;
     margin: 0 0 15px; }
-  .interiorPage.work .fullPanel.research .researchdiv {
-    display: block;
-    float: left;
-    margin: 20px 0; }
-    .interiorPage.work .fullPanel.research .researchdiv.userflow img {
+  .interiorPage.work .fullPanel.challenge {
+    background: green; }
+  .interiorPage.work .fullPanel.solution {
+    background: red; }
+  .interiorPage.work .fullPanel.research {
+    background: orange; }
+    .interiorPage.work .fullPanel.research .imgFullWidth {
       width: 100%; }
-    .interiorPage.work .fullPanel.research .researchdiv.wireframe div img {
+    .interiorPage.work .fullPanel.research .imgHalfWidth {
+      width: 49%;
       vertical-align: top !important; }
-  .interiorPage.work .fullPanel.research .persona {
-    padding: 3%;
-    background: #fff;
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08);
-    margin: 25px auto;
-    max-width: 1000px;
-    left: 50%;
-    transform: translateX(-50%); }
-    .interiorPage.work .fullPanel.research .persona .about img {
+    .interiorPage.work .fullPanel.research .researchdiv {
+      display: block;
+      float: left;
+      margin: 20px 0;
       width: 100%; }
-    .interiorPage.work .fullPanel.research .persona .about p {
-      font-size: 1.2em; }
-    .interiorPage.work .fullPanel.research .persona .stats ul {
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
-      -webkit-column-gap: 40px;
-      column-gap: 40px;
-      -moz-column-gap: 40px;
-      padding: 0; }
-      .interiorPage.work .fullPanel.research .persona .stats ul li {
-        font-size: 1.35em;
-        list-style: none; }
-    .interiorPage.work .fullPanel.research .persona .goals ol {
-      padding: 0; }
+    .interiorPage.work .fullPanel.research .persona {
+      padding: 3%;
+      background: #fff;
+      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.08);
+      margin: 25px auto;
+      max-width: 1000px;
+      left: 50%;
+      transform: translateX(-50%); }
+      .interiorPage.work .fullPanel.research .persona .about p {
+        font-size: 1.2em; }
+      .interiorPage.work .fullPanel.research .persona .stats ul {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 40px;
+        column-gap: 40px;
+        -moz-column-gap: 40px;
+        padding: 0; }
+        .interiorPage.work .fullPanel.research .persona .stats ul li {
+          font-size: 1.35em;
+          list-style: none; }
+      .interiorPage.work .fullPanel.research .persona .goals ol {
+        padding: 0 0 0 15px; }
   .interiorPage.work .showWork img {
     max-width: 100%; }
   .interiorPage.work .showWork .row {

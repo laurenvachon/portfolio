@@ -702,26 +702,27 @@ section {
       }
     }
     .fullPanel {
+      &.challenge {
+        background: green;
+      }
+      &.solution {
+        background: red;
+      }
       &.research {
+        background: orange;
+
+        .imgFullWidth {
+          width: 100%;
+        }
+        .imgHalfWidth {
+          width: 49%;
+          vertical-align: top !important;
+        }
         .researchdiv {
           display: block;
           float: left;
           margin: 20px 0;
-
-          &.userflow {
-            img {
-              width: 100%;
-            }
-          }
-
-          &.wireframe {
-            div {
-              img {
-                vertical-align: top !important;
-              }
-            }
-
-          }
+          width: 100%;
         }
         .persona {
           padding: 3%;
@@ -732,9 +733,6 @@ section {
           left: 50%;
           transform: translateX(-50%);
           .about {
-            img {
-              width: 100%;
-            }
             p {
               font-size: 1.2em;
             }
@@ -757,7 +755,7 @@ section {
           }
           .goals {
             ol {
-              padding: 0;
+              padding: 0 0 0 15px;
             }
           }
         }
