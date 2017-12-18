@@ -525,6 +525,10 @@ section {
     background: #ff5a5f; }
     .interiorPage.work .fullPanel.solution h1, .interiorPage.work .fullPanel.solution h2, .interiorPage.work .fullPanel.solution h3, .interiorPage.work .fullPanel.solution h4, .interiorPage.work .fullPanel.solution h5, .interiorPage.work .fullPanel.solution h6, .interiorPage.work .fullPanel.solution p, .interiorPage.work .fullPanel.solution ul, .interiorPage.work .fullPanel.solution li, .interiorPage.work .fullPanel.solution a {
       color: #fff; }
+  .interiorPage.work .fullPanel.findings {
+    background-color: #029b95; }
+    .interiorPage.work .fullPanel.findings h2 {
+      color: #fff; }
   .interiorPage.work .fullPanel .researchdiv {
     display: block;
     float: left;

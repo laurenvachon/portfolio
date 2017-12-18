@@ -741,6 +741,12 @@ section {
           color: #fff;
         }
       }
+      &.findings {
+        background-color: $tertiary-color;
+        h2 {
+          color: #fff;
+        }
+      }
       .researchdiv {
         display: block;
         float: left;
@@ -786,6 +792,7 @@ section {
       &.research {
         background: #f2f2f2;
       }
+
       &.finalscreens {
         background: #f2f2f2;
       }
