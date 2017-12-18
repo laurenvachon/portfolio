@@ -775,6 +775,14 @@ section {
             column-gap: 40px;
             -moz-column-gap: 40px;
             padding: 0;
+            @media (max-width: 768px) {
+              -webkit-column-count: 1;
+              -moz-column-count: 1;
+              column-count: 1;
+              -webkit-column-gap: 0px;
+              column-gap: 00px;
+              -moz-column-gap: 0px;
+            }
             li {
               font-size: 1.35em;
               list-style: none;
