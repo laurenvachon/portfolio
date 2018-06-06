@@ -14,6 +14,7 @@ body {
   margin: 0;
   background-color: #f2f2f2;
   overflow-x: hidden;
+  padding: 0 !important;
 }
 .wf-loading {
   visibility: hidden;
@@ -632,7 +633,7 @@ section {
 
 
 
-.interiorPage {
+.interiorPage, .blog {
   background-color: #f8f8f8;
 
   &.journal {
